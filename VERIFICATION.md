@@ -12,6 +12,8 @@ Original-release update compatibility: the old release may wait until a return t
 
 Seven new nine-scene atlases and all 63 extracted scenes were visually reviewed. The eleven retained atlases are indexed by ISO code in `art-source/atlas-catalog.json`. The original country artwork remains unchanged. The Congo church is labelled generically after art review rather than attributing simplified generated architecture to a specific basilica.
 
+The published GitHub Pages release (`0533c383666638b8`) was verified in a fresh browser: all 99 destinations are present, new Nigeria/Ukraine scenes load, all 1,476 release files cache under the correct app scope, English persists through an offline reload, and there are zero HTTP errors or runtime exceptions.
+
 Reports and screenshots are in ignored `artifacts/`. Reproduce with `npm test`, `scripts/browser-check.mjs`, `scripts/check-expansion-upgrade.mjs`, `scripts/check-question-layouts.mjs`, `scripts/check-quiz-markers.mjs` and `scripts/check-live.mjs`. The legacy upgrade check needs a built original checkout (commit `be9a456`) at `artifacts/original-release/`.
 
 Physical Android/iPad OS installation and playback through actual device speakers were not tested here. Browser-specific installation and OS storage/audio behavior depend on the device. Synthetic native-language recordings still benefit from human pronunciation review.

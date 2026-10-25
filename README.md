@@ -34,7 +34,7 @@ Five activities are available immediately:
 4. **Pick the shape:** hear a country name and select its silhouette.
 5. **Animal friends:** choose the country where Bar met the pictured animal.
 
-Each journey has eight distinct destinations and four choices per question. The globe games have four numbered markers; nearby markers separate with connecting lines to their real locations. the numbered jump buttons rotate to a marker without answering. A hint highlights the target. Animal questions exclude distractors that have the same animal as the target country. Wrong answers invite another try without losing stars; correct answers earn one star once, even after a reload. Continue explicitly to the next question. The final screen celebrates the journey and offers the passport, another journey or the explorer.
+Each journey has eight distinct destinations and four choices per question. The globe games have four numbered markers; nearby markers separate with connecting lines to their real locations. The numbered jump buttons rotate to a marker without answering. A hint highlights the target. Animal questions exclude distractors that have the same animal as the target country. Wrong answers invite another try without losing stars; correct answers earn one star once, even after a reload. Continue explicitly to the next question. The final screen celebrates the journey and offers the passport, another journey or the explorer.
 
 An unfinished journey saves its exact shuffled questions, option order, answer state and hints. **Continue your journey** resumes it from the games screen. Reloading during a journey also resumes it. Starting another activity replaces the unfinished journey but keeps every earned stamp and star.
 

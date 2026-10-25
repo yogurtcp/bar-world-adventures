@@ -1,0 +1,94 @@
+/* The world is the home screen. All supporting content opens only when requested. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.compact-header.topbar{height:calc(72px + env(safe-area-inset-top,0px));padding:calc(12px + env(safe-area-inset-top,0px)) max(24px,env(safe-area-inset-right,0px)) 12px max(24px,env(safe-area-inset-left,0px));max-width:none;flex-wrap:nowrap;border-bottom:0;gap:16px}
+.compact-header .brand{font-size:17px;gap:9px;white-space:normal}
+.compact-header .brand-icon{font-size:30px}
+.world-menu-button{width:52px;height:52px;border-radius:18px;display:grid;place-items:center;font-size:26px;background:#fffdf5;border:1px solid #dce7d5;box-shadow:0 4px 0 #cbdccd77;flex-shrink:0}
+.world-screen{overflow:hidden;overscroll-behavior:none}
+.world-screen #app{height:100dvh;overflow:hidden;position:relative}
+.world-screen .compact-header{position:absolute;inset:0 0 auto;z-index:3;pointer-events:none}
+.world-screen .compact-header button{pointer-events:auto}
+.globe-home{height:100dvh;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 48% 45%,#fcfff5 0,#edf8ee 58%,#e3f2eb 100%)}
+.world-stage{width:min(100vw,100dvh);height:min(100vw,100dvh);flex-shrink:0}
+.world-stage #globe{width:100%;height:100%}
+.world-stage .globe>ellipse{display:none}
+.world-stage .globe{width:100%;height:100%;max-height:none;overflow:visible}
+.world-dock{position:absolute;bottom:max(16px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;gap:9px;align-items:center;padding:9px;border:1px solid #e0e6d1;background:#fffdf3ed;box-shadow:0 6px 22px #446a5020;border-radius:25px;z-index:2}
+.dock-button{min-width:92px;min-height:70px;border-radius:18px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;padding:8px 15px;font-size:13px}
+.dock-button>span{font-size:30px;line-height:1.1}
+.dock-button:hover{background:#eaf2df}
+.dock-button.play-dock{background:#ffe09a;box-shadow:0 3px 0 #e5c27b}
+.dock-button.play-dock:hover{background:#ffd67b}
+.world-zoom{position:absolute;inset-inline-end:max(24px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);display:grid;gap:12px;z-index:2}
+.world-zoom .round-button{width:50px;height:50px;font-size:25px;font-weight:500;background:#fffdf4ed}
+.globe-hint{position:absolute;bottom:120px;left:50%;transform:translateX(-50%);color:#73917c;font-size:12px;white-space:nowrap;pointer-events:none;text-shadow:0 1px 2px #faffef}
+#toast{bottom:max(112px,calc(env(safe-area-inset-bottom) + 100px))}
+dialog{border-radius:26px;max-width:calc(100vw - max(24px,calc(env(safe-area-inset-left,0px) + env(safe-area-inset-right,0px) + 24px)));max-height:calc(100dvh - max(32px,calc(env(safe-area-inset-top,0px) + env(safe-area-inset-bottom,0px) + 24px)));padding:22px;overscroll-behavior:contain}
+dialog::backdrop{background:#24483a48;backdrop-filter:blur(4px)}
+.dialog-head{margin-bottom:18px;gap:14px}
+.dialog-head h2{font-size:25px;line-height:1.3}
+.popup-close{min-width:48px;min-height:48px;font-size:30px;line-height:1;flex-shrink:0}
+.menu-dialog{width:min(450px,calc(100vw - 28px))}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.menu-tile{min-height:120px;border-radius:20px;background:#edf3e3;border:1px solid #dfe7cd;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:16px 10px;font-size:16px}
+.menu-tile>span{font-size:35px;line-height:1}
+.menu-tile>small{font-size:12px;color:#78916b;direction:ltr}
+.menu-tile:first-child{background:#fff0c5;border-color:#efd695}
+.menu-tools{display:flex;align-items:center;justify-content:center;gap:16px;border-top:1px dashed #dfe4cf;padding-top:20px;margin-top:20px}
+.menu-tools .round-button{width:48px;height:48px;font-size:22px}
+.games-dialog{width:min(930px,calc(100vw - 28px))}
+.games-dialog .page{padding:0}
+.games-dialog .page-heading,.games-dialog .game-card p,.games-dialog .play-pill{display:none}
+.games-dialog .game-cards{grid-template-columns:repeat(3,1fr);gap:15px}
+.games-dialog .game-card{min-height:170px;padding:15px 12px;border-radius:21px;box-shadow:0 4px 0 #dce5d3}
+.games-dialog .game-illustration{height:83px;max-width:180px;margin:0 auto 13px}
+.games-dialog .game-illustration>span{font-size:48px}
+.games-dialog .game-illustration>i{font-size:35px}
+.games-dialog .game-illustration .country-shape{width:70px;height:80px}
+.games-dialog .game-card h2{font-size:21px;margin:0}
+.games-dialog .resume-button{margin:0 auto 20px}
+.passport-dialog{width:min(1040px,calc(100vw - 28px))}
+.passport-dialog .page{padding:0}
+.passport-dialog .page-heading{margin:0 0 18px}
+.passport-dialog .page-heading h1,.passport-dialog .page-heading>p{display:none}
+.passport-dialog .page-heading .counters{margin-top:0}
+.passport-dialog .passport-grid{max-height:62dvh;overflow:auto;grid-template-columns:repeat(6,1fr);padding:4px 4px 10px;gap:12px}
+.passport-dialog .passport-stamp{padding:9px;border-radius:16px}
+.passport-dialog .passport-stamp img{max-height:125px;object-fit:cover}
+.passport-dialog .passport-stamp small{display:none}
+.search-dialog{width:min(740px,calc(100vw - 28px))}
+.search-dialog .region-tabs{gap:6px;flex-wrap:wrap;overflow:visible;margin-bottom:14px}
+.search-dialog .region-tabs button{min-height:42px;padding:9px 15px;font-size:13px}
+.search-dialog .search-input{min-height:48px;margin-bottom:14px}
+.search-dialog .search-results{margin-top:0;max-height:55dvh;overflow:auto;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:3px}
+.search-results button{display:flex;align-items:center;gap:9px;min-height:58px;padding:12px;font-size:14px;border:1px solid #e0e6d2}
+.search-results button>span{font-size:25px;flex-shrink:0}
+.search-results button>b{font-size:inherit;line-height:1.35}
+.search-results button>i{font-size:11px;font-style:normal;color:#6d9861;margin-inline-start:auto}
+.country-dialog{width:min(840px,calc(100vw - 28px));padding:20px}
+.country-dialog .country-panel{border:0;border-radius:0;box-shadow:none;background:transparent;width:100%;max-width:none;margin:0;padding:0;overflow:visible}
+.country-dialog .country-heading{gap:10px;margin-bottom:16px;position:sticky;top:-20px;z-index:4;background:#fffdf4;padding:3px 0 8px}
+.country-dialog .country-heading h2{flex:1;min-width:0;font-size:27px;line-height:1.2}
+.country-dialog .country-heading .round-button{width:46px;height:46px;min-width:46px;min-height:46px;font-size:20px}
+.country-dialog .country-heading .popup-close{font-size:30px}
+.country-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:center}
+.country-dialog .scene-wrap{width:min(100%,calc(100dvh - 145px));margin:auto;aspect-ratio:1;border-radius:20px}
+.country-actions{min-width:0}
+.country-dialog .discovery-buttons{display:flex;flex-direction:column;gap:10px;margin:0 0 18px}
+.country-dialog .discovery-buttons button{min-height:58px;padding:12px;gap:10px;border-radius:15px}
+.country-dialog .discovery-buttons button>span:first-child{font-size:26px}
+.country-dialog .discovery-buttons button>b{font-size:16px;line-height:1.3;text-align:start}
+.country-dialog .discovery-buttons button>i{font-size:20px}
+.country-dialog .phrase-area{padding-top:16px}
+.country-dialog .language-heading{font-size:15px;justify-content:center;gap:8px;margin-bottom:13px}
+.country-dialog .language-heading b{font-size:15px}
+.country-dialog .phrase-buttons{gap:10px}
+.country-dialog .phrase-buttons button{min-height:89px;padding:12px 10px;gap:8px;border-radius:16px}
+.country-dialog .phrase-icon{font-size:25px}
+.country-dialog .phrase-buttons button small{font-size:12px}
+.country-dialog .phrase-buttons button b{font-size:16px;line-height:1.35}
+.country-dialog .phrase-buttons button em{font-size:11px}
+.country-dialog .play-sound{font-size:12px}
+@media(min-width:1400px){.world-zoom{inset-inline-end:calc((100vw - 1100px)/2)}}
+@media(max-width:700px){.compact-header.topbar{height:68px;padding:10px 14px}.compact-header .brand{font-size:15px;gap:7px}.compact-header .brand-icon{font-size:27px}.world-menu-button{width:48px;height:48px;border-radius:16px;font-size:24px}.world-zoom{inset-inline-end:max(12px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px));top:39%}.world-zoom .round-button{width:44px;height:44px;min-width:44px;min-height:44px}.world-stage{width:min(115vw,calc(100dvh - 130px));height:min(115vw,calc(100dvh - 130px))}.world-dock{gap:5px;padding:7px;bottom:max(14px,env(safe-area-inset-bottom))}.dock-button{min-width:87px;min-height:72px;padding:9px 12px;font-size:12px}.dock-button>span{font-size:29px}.globe-hint{bottom:116px;font-size:11px}.country-dialog{width:min(450px,calc(100vw - 20px));padding:16px}.country-body{grid-template-columns:1fr;gap:16px}.country-dialog .country-heading{top:-16px;margin-bottom:10px;gap:7px}.country-dialog .country-heading h2{font-size:25px}.country-dialog .country-heading .round-button{width:43px;height:43px;min-width:43px;min-height:43px}.country-dialog .scene-wrap{width:min(100%,35dvh,310px)}.country-dialog .discovery-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}.country-dialog .discovery-buttons button{padding:10px 8px;gap:6px;min-height:59px}.country-dialog .discovery-buttons button>b{font-size:12px}.country-dialog .discovery-buttons button>span:first-child{font-size:22px}.country-dialog .discovery-buttons button>i{font-size:15px}.country-dialog .phrase-area{padding-top:12px}.country-dialog .phrase-buttons button{min-height:75px}.country-dialog .language-heading{margin-bottom:10px}.games-dialog .game-cards{grid-template-columns:repeat(2,1fr);gap:12px}.games-dialog .game-card{min-height:142px;padding:13px 8px}.games-dialog .game-illustration{height:65px;margin-bottom:11px}.games-dialog .game-illustration>span{font-size:39px}.games-dialog .game-illustration>i{font-size:29px}.games-dialog .game-illustration .country-shape{width:58px;height:60px}.games-dialog .game-card h2{font-size:17px}.passport-dialog .passport-grid{grid-template-columns:repeat(3,1fr);gap:10px}.search-dialog .search-results{grid-template-columns:repeat(2,minmax(0,1fr))}.search-dialog .region-tabs{gap:3px}.search-dialog .region-tabs button{font-size:11px;padding:7px 10px;min-height:38px}.search-results button{font-size:12px;padding:10px 8px;gap:7px}.search-results button>span{font-size:22px}.dialog-head h2{font-size:22px}}
+@media(max-height:600px) and (min-width:701px){.compact-header.topbar{height:58px;padding:7px 18px}.compact-header .brand{font-size:15px}.world-menu-button{width:44px;height:44px;font-size:23px}.world-dock{bottom:9px;padding:6px;border-radius:21px}.dock-button{min-height:58px;min-width:94px;padding:5px 13px;gap:3px;font-size:11px}.dock-button>span{font-size:25px}.globe-hint{display:none}.world-zoom .round-button{width:43px;height:43px;min-width:43px;min-height:43px}.world-zoom{inset-inline-end:max(18px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px));gap:9px}.games-dialog .game-cards{grid-template-columns:repeat(5,1fr);gap:10px}.games-dialog .game-card{min-height:145px;padding:13px 8px}.games-dialog .game-illustration{height:65px;margin-bottom:10px}.games-dialog .game-illustration>span{font-size:36px}.games-dialog .game-illustration>i{font-size:28px}.games-dialog .game-card h2{font-size:16px}.country-dialog{padding:14px 18px}.country-dialog .country-heading{top:-14px;margin-bottom:8px}.country-dialog .country-heading h2{font-size:23px}.country-dialog .discovery-buttons{gap:8px;margin-bottom:10px}.country-dialog .discovery-buttons button{min-height:48px;padding:8px 10px}.country-dialog .discovery-buttons button>b{font-size:13px}.country-dialog .phrase-area{padding-top:10px}.country-dialog .language-heading{margin-bottom:9px}.country-dialog .phrase-buttons button{min-height:70px;padding:8px}.country-dialog .phrase-buttons button b{font-size:14px}.country-dialog .phrase-buttons button em{font-size:10px}.search-dialog .search-results{max-height:42dvh}.menu-tile{min-height:95px}.menu-tools{margin-top:12px;padding-top:12px}.menu-dialog{width:min(560px,calc(100vw - 28px))}.menu-grid{grid-template-columns:repeat(4,1fr)}.menu-tile{font-size:13px}.menu-tile>span{font-size:28px}}

@@ -11,7 +11,7 @@ run('npm',['test'],{stdio:'inherit'});
 run('npm',['run','build'],{stdio:'inherit'});
 const work=mkdtempSync(join(tmpdir(),'bar-world-pages-'));
 try{
- const env={...process.env,GIT_DIR:join(project,'.git'),GIT_WORK_TREE:site,GIT_INDEX_FILE:join(work,'index')};
+ const env={...process.env,GIT_DIR:run('git',['rev-parse','--absolute-git-dir']).trim(),GIT_WORK_TREE:site,GIT_INDEX_FILE:join(work,'index')};
  const git=(args)=>run('git',['-c','user.name=Codex','-c','user.email=codex@users.noreply.github.com',...args],{cwd:site,env});
  const parents=[];
  if(run('git',[...auth,'ls-remote','--heads',remote,'gh-pages']).trim()){

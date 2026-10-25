@@ -8,7 +8,7 @@ try{
   const context=await browser.newContext({viewport:{width:1024,height:768},serviceWorkers:'block'}),page=await context.newPage();
   const fixture=emptySave();fixture.locale=locale;fixture.muted=true;fixture.gentle=true;fixture.view='question';fixture.round=makeRound(mode,()=>0);
   const target=mode==='animalGame'?140:180;fixture.round.deck[0]={target,options:[target,...[180,140,804,398].filter(id=>id!==target)]};
-  await page.addInitScript(save=>localStorage.setItem('bar-world-v1',JSON.stringify(save)),fixture);await page.goto('http://127.0.0.1:4186');await page.locator('.question-page').waitFor();
+  await page.addInitScript(save=>localStorage.setItem('bar-world-v1',JSON.stringify(save)),fixture);await page.goto(process.env.BASE_URL||'http://127.0.0.1:4186');await page.locator('.question-page').waitFor();
   for(const[width,height]of[[1024,768],[768,1024]]){await page.setViewportSize({width,height});const dimensions=await page.evaluate(()=>({width:innerWidth,height:innerHeight,scrollWidth:document.documentElement.scrollWidth,scrollHeight:document.documentElement.scrollHeight}));results.push({locale,mode,...dimensions});if(width===1024)await page.screenshot({path:`artifacts/question-${locale}-${mode}.png`,fullPage:true});}
   await context.close();
  }

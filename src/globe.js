@@ -24,8 +24,8 @@ export function quizPinPosition(anchor,r,occupied){
  return [...anchor];
 }
 export class Globe {
- constructor(container,{selected=376,locale='he',onSelect,gameIds=null,hint=null,gentle=false,rotation=null}={}){
- this.container=container;this.selected=selected;this.locale=locale;this.onSelect=onSelect;this.gameIds=gameIds;this.hint=hint;this.gentle=gentle;this.size=246;this.rotation=rotation||[-25,-18,0];this.destroyed=false;
+ constructor(container,{selected=376,locale='he',onSelect,gameIds=null,hint=null,gentle=false,rotation=null,size=246}={}){
+ this.container=container;this.selected=selected;this.locale=locale;this.onSelect=onSelect;this.gameIds=gameIds;this.hint=hint;this.gentle=gentle;this.size=size;this.rotation=rotation||[-25,-18,0];this.destroyed=false;
  this.svg=node('svg',{viewBox:'0 0 600 600',class:'globe',role:'group','aria-label':locale==='he'?'גלובוס אינטראקטיבי':'Interactive globe',tabindex:0});container.append(this.svg);
  const defs=node('defs',{},this.svg),gradient=node('radialGradient',{id:'ocean',cx:'34%',cy:'24%',r:'75%'},defs);node('stop',{offset:'0%','stop-color':'#85e4e6'},gradient);node('stop',{offset:'65%','stop-color':'#51bfcf'},gradient);node('stop',{offset:'100%','stop-color':'#2891b3'},gradient);
  const shade=node('radialGradient',{id:'shade',cx:'32%',cy:'25%',r:'75%'},defs);node('stop',{offset:'65%','stop-color':'#083e63','stop-opacity':0},shade);node('stop',{offset:'100%','stop-color':'#083e63','stop-opacity':.24},shade);

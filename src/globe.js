@@ -44,11 +44,14 @@ export class Globe {
  const title=node('title',{},g);title.textContent=gameIds?String(gameIds.indexOf(c.id)+1):c[locale];this.pinNodes.push({c,g,r,leader,anchorDot});}
  this.draw();this.bind();
  }
- bind(){let start=null,moved=false,frame=0;
- this.svg.addEventListener('pointerdown',e=>{if(e.button&&e.button!==0)return;start={x:e.clientX,y:e.clientY,r:[...this.rotation]};moved=false;this.svg.setPointerCapture(e.pointerId);this.svg.classList.add('dragging');});
+ bind(){let start=null,moved=false,frame=0,pendingId=null;
+ this.svg.addEventListener('pointerdown',e=>{if(e.button&&e.button!==0)return;pendingId=null;start={x:e.clientX,y:e.clientY,r:[...this.rotation]};moved=false;this.svg.setPointerCapture(e.pointerId);this.svg.classList.add('dragging');});
  this.svg.addEventListener('pointermove',e=>{if(!start)return;const dx=e.clientX-start.x,dy=e.clientY-start.y;if(Math.hypot(dx,dy)>6)moved=true;if(!moved)return;this.rotation=[start.r[0]+dx*.33,Math.max(-80,Math.min(80,start.r[1]-dy*.33)),0];if(!frame)frame=requestAnimationFrame(()=>{frame=0;if(!this.destroyed)this.draw();});});
- this.svg.addEventListener('pointerup',e=>{this.svg.classList.remove('dragging');if(!moved&&start){const target=document.elementFromPoint(e.clientX,e.clientY)?.closest('[data-pin],[data-country]');const id=+(target?.getAttribute('data-pin')||target?.getAttribute('data-country'));if(id&&(!this.gameIds||this.gameIds.includes(id)))this.onSelect?.(id);}start=null;});
- this.svg.addEventListener('pointercancel',()=>{start=null;this.svg.classList.remove('dragging');});
+ this.svg.addEventListener('pointerup',e=>{this.svg.classList.remove('dragging');if(!moved&&start){const target=document.elementFromPoint(e.clientX,e.clientY)?.closest('[data-pin],[data-country]');const id=+(target?.getAttribute('data-pin')||target?.getAttribute('data-country'));if(id&&(!this.gameIds||this.gameIds.includes(id)))pendingId=id;}start=null;});
+ // Open the next view on click, after pointerup has finished. Opening during
+ // pointerup lets the same tap click a picture/greeting in the new country view.
+ this.svg.addEventListener('click',e=>{if(!pendingId)return;const id=pendingId;pendingId=null;e.preventDefault();e.stopPropagation();this.onSelect?.(id);});
+ this.svg.addEventListener('pointercancel',()=>{start=null;pendingId=null;this.svg.classList.remove('dragging');});
  this.svg.addEventListener('keydown',e=>{const dirs={ArrowLeft:[-15,0],ArrowRight:[15,0],ArrowUp:[0,12],ArrowDown:[0,-12]};if(dirs[e.key]){e.preventDefault();this.spin(...dirs[e.key]);}});
  }
  draw(){this.p.scale(this.size).rotate(this.rotation);this.ocean.setAttribute('d',this.path({type:'Sphere'}));this.graticule.setAttribute('d',this.path(geoGraticule10()));for(const {f,n}of this.paths){n.setAttribute('d',this.path(f)||'');if(+f.id===this.hint)n.setAttribute('fill','#ffe46e');}this.shade.setAttribute('d',this.path({type:'Sphere'}));

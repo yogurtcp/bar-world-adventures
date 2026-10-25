@@ -7,7 +7,7 @@ import {Globe,countryShape} from './globe.js';
 import {speak,speakSequence,effect,stop,unlock} from './audio.js';
 import {setupPWA,installApp,isInstalled,safeUpdate} from './pwa.js';
 let save;try{save=sanitizeSave(JSON.parse(localStorage.getItem(SAVE_KEY)));}catch{save=emptySave();}
-let screen=save.view==='question'&&!save.round?'explore':save.view,globe=null,feedback='',errorId=null,lock=false,toastTimer,search='',offlineReady=false,worldCamera=null;
+let screen=save.view==='question'&&save.round?'question':'explore',globe=null,feedback='',errorId=null,lock=false,toastTimer,search='',offlineReady=false,worldCamera=null;
 const app=document.querySelector('#app'),dialog=document.querySelector('#dialog');
 const t=k=>strings[save.locale][k]||k,name=c=>c[save.locale],word=(c,key)=>c[key+(save.locale==='he'?'He':'En')];
 try{const camera=JSON.parse(sessionStorage.getItem('bar-world-camera'));if(Array.isArray(camera?.rotation)&&camera.rotation.length===3&&camera.rotation.every(Number.isFinite)&&Number.isFinite(camera.size)&&camera.size>=190&&camera.size<=430)worldCamera=camera;}catch{}
@@ -32,7 +32,7 @@ function render({focusCountry=null,keepRotation=false}={}){const quizRotation=ke
  app.querySelectorAll('button').forEach(b=>b.addEventListener('pointerdown',unlock,{once:true}));}
 function redraw(){const kind=dialog.open?dialog.dataset.kind:null;render({keepRotation:true});if(kind&&kind!=='games'&&kind!=='passport')refreshPopup(kind);}
 function refreshPopup(kind){if(kind==='country')showCountry();else if(kind==='menu')showMenu();else if(kind==='settings')showSettings();else if(kind==='search')showSearch(false);}
-function dismissPopup(){if(dialog.open){dialog.dataset.kind='';dialog.close();}}
+function dismissPopup(){if(dialog.open){dialog.dataset.kind='';dialog.close();dialog.replaceChildren();}}
 function navigate(dest){stop();dismissPopup();lock=false;feedback='';errorId=null;screen=dest;persist();render();if(!dialog.open)safeUpdate();window.scrollTo(0,0);}
 function selectCountry(id,{focus=true}={}){if(!byId[id])return;stop();const fresh=!save.visited.includes(id);if(fresh)save.visited.push(id);save.selected=id;screen='explore';persist();render({focusCountry:focus?id:null});showCountry();effect(fresh?'win':'tap',save);say(name(byId[id]));if(fresh)toast('📒 '+t('stamp'));}
 function start(mode){stop();dismissPopup();save.round=makeRound(mode);screen='question';feedback='';errorId=null;lock=false;persist();render();say(promptText());safeUpdate();}
@@ -56,7 +56,7 @@ async function handle(action){const c=byId[save.selected];if(['explore','games',
  case'surprise':{const pool=countries.filter(x=>x.id!==save.selected),unseen=pool.filter(x=>!save.visited.includes(x.id)),choices=unseen.length?unseen:pool;selectCountry(choices[Math.floor(Math.random()*choices.length)].id);break;}
  case'countryName':say(name(c));break;case'animal':effect('animal',save);say(word(c,'animal'));document.querySelector('.scene-wrap')?.classList.add('bounce');setTimeout(()=>document.querySelector('.scene-wrap')?.classList.remove('bounce'),700);break;
  case'place':effect('tap',save);say(word(c,'place'));document.querySelector('.scene-wrap')?.classList.add('sparkle');setTimeout(()=>document.querySelector('.scene-wrap')?.classList.remove('sparkle'),900);break;
- case'barWave':effect('tap',save);document.querySelector('.country-scene')?.classList.add('wave');setTimeout(()=>document.querySelector('.country-scene')?.classList.remove('wave'),850);say(c.hello,c.language);break;
+ case'barWave':effect('tap',save);document.querySelector('.country-scene')?.classList.add('wave');setTimeout(()=>document.querySelector('.country-scene')?.classList.remove('wave'),850);say(name(c));break;
  case'hello':case'goodbye':speakSequence([[save.locale,t(action==='hello'?'sayHello':'sayGoodbye')],[c.language,c[action]]],save,()=>toast(t('audioUnavailable')));document.querySelector('.scene-wrap')?.classList.add('bounce');setTimeout(()=>document.querySelector('.scene-wrap')?.classList.remove('bounce'),700);break;
  case'resume':navigate('question');if(save.round?.index<8)say(promptText());break;case'again':start(save.round?.mode||'findName');break;
  case'replay':if(save.round?.index<8)say(promptText());break;
@@ -66,7 +66,7 @@ async function handle(action){const c=byId[save.selected];if(['explore','games',
 }
 document.addEventListener('click',e=>{const el=e.target.closest('button');if(!el)return;unlock();if(el.dataset.action)handle(el.dataset.action);else if(el.dataset.countrySelect){if(dialog.open)dialog.close();selectCountry(+el.dataset.countrySelect);}else if(el.dataset.region){save.region=el.dataset.region;persist();updateSearch();}else if(el.dataset.mode)start(el.dataset.mode);else if(el.dataset.answer)submit(+el.dataset.answer);else if(el.dataset.focus)globe?.focus(+el.dataset.focus);});
 dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closePopup();}});
-dialog.addEventListener('close',()=>{if(!dialog.open){if(dialog.dataset.kind)stop();if(screen==='games'||screen==='passport')screen='explore';persist();dialog.dataset.kind='';if(screen!=='question'&&document.activeElement===document.body){const target=document.querySelector(`[data-pin="${save.selected}"][tabindex="0"]`)||document.querySelector('[data-action=menu]');target?.focus({preventScroll:true});}safeUpdate();}});
+dialog.addEventListener('close',()=>{if(!dialog.open){if(dialog.dataset.kind)stop();if(screen==='games'||screen==='passport')screen='explore';persist();dialog.dataset.kind='';dialog.replaceChildren();if(screen!=='question'&&document.activeElement===document.body){const target=document.querySelector(`[data-pin="${save.selected}"][tabindex="0"]`)||document.querySelector('[data-action=menu]');target?.focus({preventScroll:true});}safeUpdate();}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!dialog.open&&screen==='question')navigate('games');});
 window.addEventListener('pagehide',persist);
 if(screen==='explore'&&!save.visited.includes(save.selected)){save.visited.push(save.selected);persist();}

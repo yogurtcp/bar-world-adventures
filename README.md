@@ -8,7 +8,7 @@ Version 1.1 expands the original 36 destinations to **99**, including **32 in Af
 
 ## Explore
 
-Drag the toy globe with a mouse or finger, use its rotation buttons or arrow keys, or zoom in and out. Tap a colored country or one of the animal/landmark picture pins. Small countries, including **Israel**, have enlarged tap targets; all 99 destinations also appear in a country strip and searchable list. Continent filters and a surprise flight help discover new places.
+The home screen shows the globe. Drag it with a mouse or finger, use the arrow keys, or zoom in and out. Tap a colored country or an animal/landmark picture pin to hear the country name and open its full-screen view. A large yellow **X** returns to the globe. Small countries, including **Israel**, have enlarged tap targets; all 99 destinations also appear in a searchable country picker. Continent filters and a surprise flight help discover new places. Games, passport, installation and settings are in pop-up menus.
 
 Every destination has an original illustrated scene with Bar in a local-inspired travel outfit, an associated animal, and a landmark or traditional building. Tap Bar, the animal or the landmark to hear speech and playful sound effects and see reactions. The two greeting buttons play a Hebrew/English introduction followed by **hello or goodbye in the named local language**. Native text and a Latin transliteration appear together.
 
@@ -40,9 +40,9 @@ An unfinished journey saves its exact shuffled questions, option order, answer s
 
 ## Install, offline play and updates
 
-Tap **Install** in the top bar. Chrome/Edge use the native prompt when available; otherwise the app gives browser-specific instructions. On iPad/iPhone, use Safari → Share → Add to Home Screen → Add. Keep “Open as Web App” enabled if offered. Installed apps launch in their own standalone window and hide the installation button. OS/browser support varies; see [PWA installation](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Installing).
+Open **☰ → Install**. Chrome/Edge use the native prompt when available; otherwise the app gives browser-specific instructions. On iPad/iPhone, use Safari → Share → Add to Home Screen → Add. Keep “Open as Web App” enabled if offered. Installed apps launch in their own standalone window and hide the installation button. OS/browser support varies; see [PWA installation](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Installing).
 
-The first successful service-worker download caches the **whole game**: globe geometry, all 99 scenes, every one of the 1368 recorded clips, icons and app code. The explorer shows a ready-for-offline message when complete. Let that initial download finish while online. An interrupted download leaves the last complete release usable and retries on a later online launch. No network TTS, accounts, ads or external runtime assets are used.
+The first successful service-worker download caches the **whole game**: globe geometry, all 99 scenes, every one of the 1368 recorded clips, icons and app code. Settings show a ready-for-offline message when complete. Let that initial download finish while online. Later releases reuse unchanged cached files after verifying their SHA-256; changed or corrupted files are downloaded. An interrupted download leaves the last complete release usable and retries on a later online launch. No network TTS, accounts, ads or external runtime assets are used.
 
 Online startups check once for a newer published release. There is no recurring, focus, foreground or reconnection polling. A downloaded update activates at startup before interaction, or at the next safe navigation/question boundary when already playing. Exact question state, passport, stars, sound, motion and interface language persist through the automatic reload. App-specific cache names and manifest scope isolate this game from Bar’s other apps. Upgrades never clear local saves. An app cannot download new versions while closed.
 

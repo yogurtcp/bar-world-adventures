@@ -1,0 +1,16 @@
+import {build} from 'esbuild';
+import {readFileSync,writeFileSync,rmSync,mkdirSync,cpSync,readdirSync} from 'node:fs';
+import {join} from 'node:path';
+import {createHash} from 'node:crypto';
+const root=new URL('../',import.meta.url).pathname,dist=join(root,'dist');
+rmSync(dist,{recursive:true,force:true});mkdirSync(dist,{recursive:true});cpSync(join(root,'public'),dist,{recursive:true});
+await build({entryPoints:[join(root,'src/app.js')],bundle:true,format:'esm',target:'es2020',outdir:dist,entryNames:'app',minify:true,logLevel:'warning'});
+let html=readFileSync(join(root,'index.html'),'utf8');
+const digest=createHash('sha256').update(readFileSync(join(dist,'app.js'))).update(readFileSync(join(dist,'app.css'))).digest('hex').slice(0,12);
+const js=`app-${digest}.js`,css=`app-${digest}.css`;
+cpSync(join(dist,'app.js'),join(dist,js));cpSync(join(dist,'app.css'),join(dist,css));rmSync(join(dist,'app.js'));rmSync(join(dist,'app.css'));
+html=html.replace('./app.js',`./${js}`).replace('./app.css',`./${css}`);writeFileSync(join(dist,'index.html'),html);writeFileSync(join(dist,'.nojekyll'),'');
+const files=[];function walk(folder,prefix=''){for(const e of readdirSync(folder,{withFileTypes:true})){const path=prefix+e.name;if(e.isDirectory())walk(join(folder,e.name),path+'/');else if(e.name!=='.nojekyll')files.push(path);}}walk(dist);
+const release=createHash('sha256');for(const f of files.sort())release.update(f).update(readFileSync(join(dist,f)));const version=release.digest('hex').slice(0,16);
+const sw=readFileSync(join(root,'sw.js'),'utf8').replace('__VERSION__',version).replace('__FILES__',JSON.stringify(files));writeFileSync(join(dist,'sw.js'),sw);writeFileSync(join(dist,'version.json'),JSON.stringify({version,files:files.length}));
+console.log(`Built Bar World ${version}: ${files.length} offline files`);

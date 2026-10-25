@@ -85,7 +85,7 @@ The functional check temporarily builds a second release to verify a real servic
 
 - **Generated artwork:** eleven original 3×3 scene atlases made with the built-in imagegen tool, using the established generated Bar character as reference. Final scenes: [`public/assets/countries/`](public/assets/countries/). Original atlases: [`art-source/atlases/`](art-source/atlases/). Exact original prompts: [`TRAVEL_SCENES.md`](art-source/TRAVEL_SCENES.md). Expansion prompts: [`EXPANSION_V2_PROMPTS.md`](art-source/EXPANSION_V2_PROMPTS.md) and [`AFRICA_SAHEL_V2_PROMPT.md`](art-source/AFRICA_SAHEL_V2_PROMPT.md). [`atlas-catalog.json`](art-source/atlas-catalog.json) maps every scene to its ISO code. The original family photograph is not copied or published.
 - **Art extraction and icons:** `python3 scripts/prepare-art.py` requires Pillow. It crops atlas cells without retouching and creates globe-and-Bar PNG installation icons. The maskable icon keeps important artwork inside its safe zone.
-- **Recorded voices:** build-time `edge-tts==7.3.1`, Hebrew Hila and English Aria, with appropriate native-language voices for greetings. Existing exact-match recordings are reused where available. Regenerate with `python scripts/generate-audio.py` in an environment containing edge-tts. Runtime uses local MP3 files only. Recordings are synthetic; native-speaker review is recommended for language-teaching material.
+- **Recorded voices:** Hebrew uses the approved local female BlueTTS 2.5 voice. English Aria and the native greeting voices keep their build-time `edge-tts==7.3.1` recordings. Existing exact-match recordings are reused where available. Regenerate with `python scripts/generate-audio.py` in an environment containing edge-tts. Runtime uses local MP3 files only. Recordings are synthetic; native-speaker review is recommended for language-teaching material.
 - **Map geometry:** [world-atlas](https://github.com/topojson/world-atlas) packages [Natural Earth](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/) public-domain geography. Shapes use actual country polygons, with tiny detached islands and distant overseas territories omitted for recognizable quiz silhouettes. Shapes are normalized individually, not shown at comparative scale. The globe retains the source map’s administrative geography; this is a learning map, not a statement about disputed boundaries.
 - **Greeting references:** [Japan National Tourism Organization](https://www.japan.travel/en/plan/japanese-language/) and standard everyday native greetings. The language label identifies the exact language selected, rather than implying one language per country.
 
@@ -93,7 +93,10 @@ New animal references include [Virunga National Park’s okapi information](http
 
 Third-party code license notices are in [`THIRD_PARTY.md`](THIRD_PARTY.md).
 
-## Free Hebrew voice evaluation
+## Free Hebrew narration
 
-We are evaluating a free, local Hebrew narration replacement. See
-[FREE_HEBREW_VOICES.md](scripts/FREE_HEBREW_VOICES.md) for the candidate and release plan.
+Hebrew uses the approved **female BlueTTS 2.5 voice**, generated locally and bundled
+for offline play. No TTS account, API key or usage fees are required. New audio URLs
+and complete offline caches update installed copies at the normal online startup
+boundary, preserving stars, settings and active work. Other language voices remain
+unchanged. See [voice provenance and local rebuild instructions](scripts/FREE_HEBREW_VOICES.md).

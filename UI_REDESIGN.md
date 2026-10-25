@@ -14,6 +14,7 @@ Verification in Chrome:
 - 38 new UI checks cover globe size, five screen sizes, real touch input, rotation and zoom, popups, Escape, camera recovery, menus, all 99 destinations, Africa filters, language/sound/settings, installation access, offline country artwork and narration when launching a game from its popup.
 - The 113 game/browser assertions still pass for all five journeys, exact resume, audio decoding, rewards, offline play and a real waiting-worker upgrade.
 - All 20 Hebrew/English long-prompt tablet layouts pass, and eight real pointer answers for nearby Baltic-country markers pass.
+- The published GitHub Pages release `b1c917dc2db772cc` passes the live check: 99 countries, five games, all 2,114 offline files, preserved English selection after offline reload, country artwork offline, and no runtime or HTTP errors.
 
 Run `npm start` and then `node scripts/check-ui.mjs`. Other regression tools are `scripts/browser-check.mjs`, `scripts/check-question-layouts.mjs` and `scripts/check-quiz-markers.mjs`. Set `BASE_URL` to preview another local port; the default is `http://127.0.0.1:4186`. Screenshots/reports are written to ignored `artifacts/`.
 

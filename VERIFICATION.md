@@ -8,6 +8,8 @@ The first release was checked in headless Chrome using disposable test storage.
 - All 36 silhouettes were reviewed in a contact sheet, and all four generated nine-scene atlases were visually reviewed. Tiny detached islands and distant overseas areas are omitted from quiz silhouettes. The globe uses the source map geography.
 - The update test builds a new release while an eight-question journey is in progress. The current question stays intact while the worker waits. Continuing activates the new release and resumes the exact next question with the same stars, language, volume and mute settings. Offline reload is then verified.
 
+The published GitHub Pages URL was also checked in a fresh browser: all 599 release files cached under the correct subpath, all five games appeared, the language switch persisted through an offline reload, and no HTTP errors or runtime exceptions were reported. The first cold-download check exceeded its 90-second QA timeout; a fresh run completed successfully. The live-check timeout now allows three minutes for an uncached CDN download.
+
 Generated reports and screenshots are in the ignored `artifacts/` directory. `scripts/browser-check.mjs` and `scripts/check-layout.mjs` reproduce the checks with a running local preview.
 
 Physical Android/iPad OS installation and playback through actual device speakers were not tested here. Browser-specific install prompts, iOS home-screen storage behavior and OS audio output still depend on the device. Native-language pronunciation should receive human review; the app uses recorded synthetic voices, not pronunciation assessment.

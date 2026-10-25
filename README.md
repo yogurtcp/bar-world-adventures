@@ -72,6 +72,7 @@ Development checks:
 ```sh
 node scripts/check-layout.mjs
 node scripts/browser-check.mjs
+node scripts/check-live.mjs
 ```
 
 These use Playwright with the locally installed Chrome (`CHROME_PATH` overrides its location for the functional check), a running local server, disposable browser storage, and ignored `artifacts/` reports/screenshots. The functional check temporarily builds a second release to verify a real service-worker upgrade, then restores the normal build. It does not touch user saves. Physical-device OS installation remains a separate manual check.

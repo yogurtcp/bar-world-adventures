@@ -1,1 +1,22 @@
-{"name":"bar-world-adventures","version":"1.1.0","private":true,"type":"module","description":"A Hebrew-first globe adventure for Bar: countries, shapes and languages","scripts":{"start":"node scripts/serve.mjs","build":"node scripts/build.mjs","test":"node --test tests/*.test.js","deploy":"node scripts/deploy-pages.mjs"},"dependencies":{"d3-geo":"3.1.1","topojson-client":"3.1.0","world-atlas":"2.0.2"},"devDependencies":{"esbuild":"0.25.11","@playwright/test":"1.56.1"}}
+{
+  "name": "bar-world-adventures",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "A Hebrew-first globe adventure for Bar: countries, shapes and languages",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.js",
+    "deploy": "node scripts/deploy-pages.mjs"
+  },
+  "dependencies": {
+    "d3-geo": "3.1.1",
+    "topojson-client": "3.1.0",
+    "world-atlas": "2.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.11",
+    "@playwright/test": "1.56.1"
+  }
+}

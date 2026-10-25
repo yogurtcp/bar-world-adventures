@@ -6,7 +6,7 @@ document.addEventListener('pointerdown',()=>{interacted=true;},{once:true});
 export async function installApp(t,dialog){if(isInstalled())return; if(promptEvent){try{await promptEvent.prompt();await promptEvent.userChoice;}catch{}promptEvent=null;return;}
  const apple=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
  dialog.innerHTML=`<div class="dialog-head"><h2>${t('installTitle')}</h2><button class="round-button" data-action="close" aria-label="${t('close')}">×</button></div><img class="install-icon" src="icons/icon-192.png" alt="" width="96" height="96"><p class="install-instructions">${t(apple?'iosInstall':'otherInstall')}</p><p class="muted-copy">${t('offline')}</p>`;dialog.showModal();}
-export function safeUpdate(){if(registration?.waiting&&(callbacks.isSafe?.()||!interacted)){callbacks.persist?.();registration.waiting.postMessage({type:'ACTIVATE'});}}
+export function safeUpdate(atBoundary=false){if(registration?.waiting&&(atBoundary||callbacks.isSafe?.()||!interacted)){callbacks.persist?.();registration.waiting.postMessage({type:'ACTIVATE'});}}
 export async function setupPWA(options){callbacks=options;if(!('serviceWorker'in navigator))return;
  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(reloadStarted)return;callbacks.persist?.();reloadStarted=true;location.reload();});
  try{

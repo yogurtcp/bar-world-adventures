@@ -3,11 +3,13 @@ import json,pathlib,subprocess
 from PIL import Image,ImageDraw
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 source=ROOT/'art-source/atlases'
-files=['europe.png','africa-north.png','asia.png','americas-oceania.png']
+catalog=json.loads((ROOT/'art-source/atlas-catalog.json').read_text())
 countries=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {countries} from './src/countries.js';console.log(JSON.stringify(countries))"],cwd=ROOT))
-for group,file in enumerate(files):
- im=Image.open(source/file).convert('RGB');w,h=im.size
- for cell,c in enumerate(countries[group*9:group*9+9]):
+by_iso={c['iso']:c for c in countries}
+for group in catalog:
+ im=Image.open(source/group['file']).convert('RGB');w,h=im.size
+ for cell,iso in enumerate(group['isos']):
+  c=by_iso[iso]
   x,y=cell%3,cell//3
   tile=im.crop((round(x*w/3),round(y*h/3),round((x+1)*w/3),round((y+1)*h/3)))
   output=ROOT/'public'/c['art'];output.parent.mkdir(parents=True,exist_ok=True);tile.save(output,'WEBP',quality=88)
@@ -23,4 +25,4 @@ d.polygon([(803,738),(817,775),(854,778),(826,802),(834,840),(803,820),(773,840)
 icons=ROOT/'public/icons';icons.mkdir(exist_ok=True)
 for name,size in [('icon-192.png',192),('icon-512.png',512),('maskable-512.png',512),('apple-touch-icon.png',180)]:base.resize((size,size),Image.Resampling.LANCZOS).save(icons/name)
 base.resize((512,512)).save(ROOT/'art-source/icon-v1.png')
-print('Prepared 36 scenes, a Bar traveler portrait and 4 install icons')
+print(f'Prepared {len(countries)} scenes, a Bar traveler portrait and 4 install icons')

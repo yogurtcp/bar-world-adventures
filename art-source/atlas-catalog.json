@@ -1,0 +1,156 @@
+[
+  {
+    "file": "europe.png",
+    "isos": [
+      "IL",
+      "FR",
+      "IT",
+      "GR",
+      "ES",
+      "GB",
+      "DE",
+      "NL",
+      "CH"
+    ]
+  },
+  {
+    "file": "africa-north.png",
+    "isos": [
+      "NO",
+      "SE",
+      "RU",
+      "TR",
+      "EG",
+      "MA",
+      "KE",
+      "ZA",
+      "MG"
+    ]
+  },
+  {
+    "file": "asia.png",
+    "isos": [
+      "IN",
+      "CN",
+      "JP",
+      "KR",
+      "TH",
+      "VN",
+      "ID",
+      "PH",
+      "AE"
+    ]
+  },
+  {
+    "file": "americas-oceania.png",
+    "isos": [
+      "AU",
+      "NZ",
+      "US",
+      "CA",
+      "MX",
+      "BR",
+      "AR",
+      "PE",
+      "CL"
+    ]
+  },
+  {
+    "file": "africa-north-west-v2.png",
+    "isos": [
+      "DZ",
+      "TN",
+      "LY",
+      "SD",
+      "ET",
+      "SN",
+      "GH",
+      "NG",
+      "CM"
+    ]
+  },
+  {
+    "file": "africa-east-south-v2.png",
+    "isos": [
+      "TZ",
+      "UG",
+      "RW",
+      "CD",
+      "AO",
+      "ZM",
+      "ZW",
+      "BW",
+      "NA"
+    ]
+  },
+  {
+    "file": "europe-east-v2.png",
+    "isos": [
+      "UA",
+      "PL",
+      "CZ",
+      "SK",
+      "HU",
+      "RO",
+      "BG",
+      "RS",
+      "HR"
+    ]
+  },
+  {
+    "file": "europe-baltics-v2.png",
+    "isos": [
+      "PT",
+      "IE",
+      "AT",
+      "FI",
+      "BY",
+      "LT",
+      "LV",
+      "EE",
+      "DK"
+    ]
+  },
+  {
+    "file": "asia-central-west-v2.png",
+    "isos": [
+      "KZ",
+      "MN",
+      "SA",
+      "JO",
+      "LB",
+      "IR",
+      "PK",
+      "BD",
+      "NP"
+    ]
+  },
+  {
+    "file": "africa-sahel-central-v2.png",
+    "isos": [
+      "ML",
+      "NE",
+      "TD",
+      "MR",
+      "SO",
+      "SS",
+      "MZ",
+      "CG",
+      "CF"
+    ]
+  },
+  {
+    "file": "americas-asia-v2.png",
+    "isos": [
+      "CO",
+      "EC",
+      "BO",
+      "CR",
+      "CU",
+      "JM",
+      "MY",
+      "LK",
+      "GE"
+    ]
+  }
+]

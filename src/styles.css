@@ -2,3 +2,8 @@
 /* Keep the complete explorer on tablet and desktop screens. */
 @media(min-width:801px) and (min-height:601px){.world-panel .globe{max-height:max(245px,calc(100dvh - 415px))}.country-strip{scrollbar-width:none}.country-strip::-webkit-scrollbar{display:none}.picker-top .search-toggle{min-height:30px;min-width:30px}.country-picker{padding:10px 12px}.globe-caption{margin-top:22px;margin-bottom:14px}}
 @media(max-width:800px) and (min-width:601px) and (min-height:601px){.world-panel .globe{max-height:min(43vh,calc(100dvh - 435px))}.country-strip{scrollbar-width:none}.picker-top .search-toggle{min-height:30px;min-width:30px}}
+/* Keep the whole animal in view; the previous square zoom could crop off tall animals' heads. */
+.animal-picture{width:50%;height:255px;aspect-ratio:auto;background-size:auto 100%;background-position:right center;background-repeat:no-repeat;background-color:#edf2e4}
+@media(min-width:801px) and (min-height:601px) and (max-height:850px){.visual-prompt .bar-travel{max-height:230px;width:auto;max-width:220px}}
+@media(max-width:800px) and (min-width:601px){.animal-picture{height:220px}}
+@media(max-width:600px){.animal-picture{height:120px;width:96px}.animal-label{margin-top:6px}}

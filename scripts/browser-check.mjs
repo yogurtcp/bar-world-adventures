@@ -1,9 +1,11 @@
-import {chromium} from '@playwright/test';
+import {chromium,expect} from '@playwright/test';
 import assert from 'node:assert/strict';
 import {writeFileSync,rmSync,readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {audioManifest} from '../src/audio-manifest.js';
 import {modeKeys} from '../src/i18n.js';
+const expectedFiles=JSON.parse(readFileSync('dist/version.json','utf8')).files;
+const clipCount=Object.values(audioManifest).flatMap(Object.values).length;
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'/usr/bin/google-chrome',headless:true,args:['--no-sandbox','--autoplay-policy=no-user-gesture-required']});
 const context=await browser.newContext({viewport:{width:1024,height:768},hasTouch:true});
 const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -14,7 +16,7 @@ const wait=async()=>{await page.waitForFunction(()=>!!navigator.serviceWorker.co
 async function choose(id){const map=await page.locator(`[data-pin="${id}"]`).count();if(map){await page.locator(`[data-focus="${id}"]`).click();await page.locator(`[data-pin="${id}"]`).click();}else await page.locator(`[data-answer="${id}"]`).click();}
 try{
  await page.goto('http://127.0.0.1:4186');await wait();
- await page.waitForFunction(async()=>{const keys=await caches.keys();const c=await caches.open(keys.find(k=>k.startsWith('bar-world-')));return(await c.keys()).length>=599;});
+ await expect.poll(()=>page.evaluate(async expected=>{const keys=await caches.keys();const c=await caches.open(keys.find(k=>k.startsWith('bar-world-')));return(await c.keys()).length>=expected;},expectedFiles),{timeout:90000}).toBeTruthy();
  check(await page.locator('html').getAttribute('lang')==='he','Hebrew is the default');check((await save()).visited.includes(376),'Israel is the first passport stamp');
  check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth&&document.documentElement.scrollHeight<=innerHeight),'Explorer fits landscape tablet without scrolling');
  const before=await page.locator('.land').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('d')).join(''));
@@ -24,7 +26,7 @@ try{
  check(await page.locator('.country-heading h2').innerText().then(t=>t.includes('יפן')),'Country selection opens Japan scene');
  await page.locator('[data-action=hello]').click();await page.waitForTimeout(4200);
  const audioResults=await page.evaluate(async paths=>{const audio=new OfflineAudioContext(1,1,24000);const failed=[];for(let i=0;i<paths.length;i+=20)await Promise.all(paths.slice(i,i+20).map(async path=>{try{const response=await fetch(path);const decoded=await audio.decodeAudioData(await response.arrayBuffer());if(decoded.duration<.15)failed.push(path);}catch{failed.push(path);}}));return failed;},[...new Set(Object.values(audioManifest).flatMap(Object.values))]);
- check(audioResults.length===0,`All 554 Hebrew, English and greeting recordings decode (${audioResults.length} failures)`);
+ check(audioResults.length===0,`All ${clipCount} Hebrew, English and greeting recordings decode (${audioResults.length} failures)`);
  await page.locator('[data-action=locale]').first().click();check(await page.locator('html').getAttribute('dir')==='ltr','English switches the full interface to LTR');
  await page.locator('[data-action=mute]').first().click();check((await save()).muted,'Mute preference saves');
  for(const mode of modeKeys){
@@ -46,11 +48,11 @@ try{
  await page.locator('[data-action=games]').first().click();await page.locator('[data-mode=shapeName]').click();const roundBeforeUpdate=(await save()).round;
  const oldVersion=await version();writeFileSync('public/release-probe.txt','Upgrade QA only');execFileSync('npm',['run','build'],{stdio:'pipe'});
  await page.reload();await page.locator('[data-action=replay]').click();
- await page.waitForFunction(async()=>!!(await navigator.serviceWorker.getRegistration()).waiting,{timeout:45000});
+ await expect.poll(()=>page.evaluate(async()=>!!(await navigator.serviceWorker.getRegistration()).waiting),{timeout:90000}).toBeTruthy();
  check(await version()===oldVersion,'New release waits while a question is active');
  check(JSON.stringify((await save()).round)===JSON.stringify(roundBeforeUpdate),'Update download preserves exact active question');
- let s=await save();await choose(s.round.deck[0].target);await page.locator('[data-action=next]').click();
- await page.waitForFunction(async old=>{if(!navigator.serviceWorker.controller)return false;return new Promise(resolve=>{const c=new MessageChannel();c.port1.onmessage=e=>resolve(e.data.version!==old);navigator.serviceWorker.controller.postMessage({type:'VERSION'},[c.port2]);});},oldVersion);
+ let s=await save();await Promise.all([page.waitForNavigation({waitUntil:'load'}),(async()=>{await choose(s.round.deck[0].target);await page.locator('[data-action=next]').click({noWaitAfter:true});})()]);
+ await expect.poll(version,{timeout:90000}).not.toBe(oldVersion);
  await page.locator('.question-page').waitFor();s=await save();check(s.round.index===1&&s.round.mode==='shapeName','Automatic upgrade resumes at the next question');check(s.locale==='en'&&s.muted&&s.view==='question','Upgrade preserves language, sound and current screen');
  const savedStars=s.stars,question=JSON.stringify(s.round);
  await context.setOffline(true);await page.reload();await page.locator('.question-page').waitFor();check((await save()).stars===savedStars&&JSON.stringify((await save()).round)===question,'Offline launch preserves progress and active work');

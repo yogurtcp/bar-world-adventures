@@ -3,3 +3,9 @@ dist/
 .venv/
 artifacts/
 __pycache__/
+
+# Local speech-service credentials (never ship in browser assets).
+.env
+.env.*
+!.env.example
+*service-account*.json

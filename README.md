@@ -92,3 +92,9 @@ The functional check temporarily builds a second release to verify a real servic
 New animal references include [Virunga National Park’s okapi information](https://virunga.org/wildlife/mammals/okapi/) and [San Diego Zoo Safari Park](https://sdzsafaripark.org/animals/okapi).
 
 Third-party code license notices are in [`THIRD_PARTY.md`](THIRD_PARTY.md).
+
+## Selected Hebrew voice upgrade
+
+Kore is the selected replacement for Hebrew narration. The build-time migration
+and credential setup are documented in [HEBREW_KORE.md](scripts/HEBREW_KORE.md).
+The published voice changes only when the replacement audio is generated and released.

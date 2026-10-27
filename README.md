@@ -4,7 +4,7 @@
 
 A separate geography and language game for Bar, matching the picture-led adventures in [Bar’s Adventures](https://github.com/yogurtcp/bar-adventures) and [Bar’s Word Adventures](https://github.com/yogurtcp/bar-word-adventures). Hebrew menus, names and narration are the default; **EN** switches the whole interface and narrator to English. Both preferences and progress survive restarts and upgrades.
 
-Version 1.1 expands the original 36 destinations to **99**, including **32 in Africa** and **28 in Europe**. The original country IDs, save key, stamps, settings and exact unfinished journeys remain valid; installed copies receive the expansion through the normal startup update.
+Version 1.3 adds **51 natural places** alongside the **99 countries**, including **32 in Africa** and **28 in Europe**. The original country IDs, save key, stamps, settings and exact unfinished journeys remain valid; installed copies receive the expansion through the normal startup update.
 
 ## Explore
 
@@ -24,15 +24,30 @@ The passport collects one stamp for each visited country. Earned stamps and star
 
 Regions are browsing groups: Russia and Turkey span continents. The illustrated clothing is a playful travel costume rather than a claim about what every resident wears. Animals and landmarks are examples associated with a place, not exclusive or necessarily official national symbols. Madagascar’s card teaches French, one of its official languages; South Africa and New Zealand teach English; Switzerland teaches German. Rwanda’s card presents English, one of its [official languages](https://www.gov.rw/about); other countries may likewise present a widely used official language. The card explicitly says it presents **a** language and that countries can have several languages. Native greetings are the deliberate exception to the Hebrew/English narration rule.
 
+## Oceans and nature
+
+Use the prominent **🌍 Countries / 🌊 Nature** switch above the globe. Nature has category buttons, a searchable **Places** list, and surprise flights. Tap a symbol to open a full-screen globe illustration with Bar and a simple spoken fact in Hebrew or English. Replay the name or fact independently. All 51 places have narration, offline access and their own passport stamps; country stamps and unfinished country games remain separate and intact. The passport uses the same Countries/Nature tabs.
+
+- **Five oceans:** Pacific, Atlantic, Indian, Southern, Arctic.
+- **Polar regions:** Arctic (the region around the North Pole) and Antarctica (the continent around the South Pole).
+- **Seas and lakes:** Mediterranean, Black, Red, Arabian, Caribbean, South China, Bering, Baltic, North, Caspian, Dead Sea, Sea of Galilee, Lake Victoria, Lake Baikal and the Great Lakes.
+- **Mountains:** Himalayas, Everest, Andes, Rockies, Alps, Atlas and Urals.
+- **Deserts:** Sahara, Arabian, Gobi, Kalahari, Namib, Atacama and Great Victoria.
+- **Rivers:** Nile, Amazon, Mississippi, Yangtze, Ganges, Danube, Congo, Mekong and Volga.
+- **Forests and wonders:** Amazon rainforest, Congo rainforest, taiga, Great Barrier Reef, Grand Canyon and Victoria Falls.
+
+Markers are representative teaching locations, not the full extent of a feature. Selecting a place highlights its geographic outline where a matching source is available. Forests and small landmarks use markers rather than invented boundaries. The Arctic highlight approximates the Arctic Circle; definitions of the wider Arctic region vary. Oceans connect, and regional map outlines are approximate. Nature quiz markers are numbered so the answer is not revealed by a label; jump buttons make every choice reachable, including opposite hemispheres and poles. Category-matched distractors are preferred when at least three are available.
+
 ## Play
 
-Five activities are available immediately:
+Six activities are available immediately:
 
 1. **Find the country:** hear a Hebrew/English country name, then select the country on the globe.
 2. **Shape explorer:** match a silhouette to a country on the globe.
 3. **Whose shape is it?** Choose a country name for a silhouette.
 4. **Pick the shape:** hear a country name and select its silhouette.
 5. **Animal friends:** choose the country where Bar met the pictured animal.
+6. **Find a natural place:** hear a name and find an ocean, polar region, sea, mountain, desert, river, forest or natural wonder on the globe.
 
 Each journey has eight distinct destinations and four choices per question. The globe games have four numbered markers; nearby markers separate with connecting lines to their real locations. The numbered jump buttons rotate to a marker without answering. A hint highlights the target. Animal questions exclude distractors that have the same animal as the target country. Wrong answers invite another try without losing stars; correct answers earn one star once, even after a reload. Continue explicitly to the next question. The final screen celebrates the journey and offers the passport, another journey or the explorer.
 
@@ -42,7 +57,7 @@ An unfinished journey saves its exact shuffled questions, option order, answer s
 
 Open **☰ → Install**. Chrome/Edge use the native prompt when available; otherwise the app gives browser-specific instructions. On iPad/iPhone, use Safari → Share → Add to Home Screen → Add. Keep “Open as Web App” enabled if offered. Installed apps launch in their own standalone window and hide the installation button. OS/browser support varies; see [PWA installation](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Installing).
 
-The first successful service-worker download caches the **whole game**: globe geometry, all 99 scenes, every one of the 1368 recorded clips, icons and app code. Settings show a ready-for-offline message when complete. Let that initial download finish while online. Later releases reuse unchanged cached files after verifying their SHA-256; changed or corrupted files are downloaded. An interrupted download leaves the last complete release usable and retries on a later online launch. No network TTS, accounts, ads or external runtime assets are used.
+The first successful service-worker download caches the **whole game**: globe geometry, all 99 scenes, all recorded clips, icons and app code. Settings show a ready-for-offline message when complete. Let that initial download finish while online. Later releases reuse unchanged cached files after verifying their SHA-256; changed or corrupted files are downloaded. An interrupted download leaves the last complete release usable and retries on a later online launch. No network TTS, accounts, ads or external runtime assets are used.
 
 Online startups check once for a newer published release. There is no recurring, focus, foreground or reconnection polling. A downloaded update activates at startup before interaction, or at the next safe navigation/question boundary when already playing. Exact question state, passport, stars, sound, motion and interface language persist through the automatic reload. App-specific cache names and manifest scope isolate this game from Bar’s other apps. Upgrades never clear local saves. An app cannot download new versions while closed.
 
@@ -69,6 +84,8 @@ npm run deploy
 
 This runs tests and a fresh build, then publishes `dist/` to the `gh-pages` branch and configures GitHub Pages. Source lives on `main`. GitHub CLI authentication is required for publishing. No workflow-token scope or server is needed.
 
+`npm test` includes DOM interaction checks for the nature picker, narration selection, polar visits, all eight quiz questions, rewards, passports and preserving saved country games. These use a simulated DOM, not a browser renderer.
+
 Development checks:
 
 ```sh
@@ -87,6 +104,7 @@ The functional check temporarily builds a second release to verify a real servic
 - **Art extraction and icons:** `python3 scripts/prepare-art.py` requires Pillow. It crops atlas cells without retouching and creates globe-and-Bar PNG installation icons. The maskable icon keeps important artwork inside its safe zone.
 - **Recorded voices:** Hebrew uses the approved local female BlueTTS 2.5 voice. English Aria and the native greeting voices keep their build-time `edge-tts==7.3.1` recordings. Existing exact-match recordings are reused where available. Regenerate with `python scripts/generate-audio.py` in an environment containing edge-tts. Runtime uses local MP3 files only. Recordings are synthetic; native-speaker review is recommended for language-teaching material.
 - **Map geometry:** [world-atlas](https://github.com/topojson/world-atlas) packages [Natural Earth](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/) public-domain geography. Shapes use actual country polygons, with tiny detached islands and distant overseas territories omitted for recognizable quiz silhouettes. Shapes are normalized individually, not shown at comparative scale. The globe retains the source map’s administrative geography; this is a learning map, not a statement about disputed boundaries.
+- **Physical geography:** [Natural Earth 110m physical vectors](https://www.naturalearthdata.com/downloads/110m-physical-vectors/) provide marine polygons, geographic regions and river centerlines, under [public-domain terms](https://www.naturalearthdata.com/about/terms-of-use/). The selected outlines are vendored in `src/nature-geometry.json`; regenerate with `node scripts/build-nature-geometry.mjs`. The builder rounds to 0.001° and normalizes spherical winding for D3. Small globe illustrations use world-atlas 110m land, while the interactive globe retains 50m country detail. Educational facts use basic geography; references include [NOAA’s five oceans](https://oceanservice.noaa.gov/facts/howmanyoceans.html), [NSIDC polar geography](https://nsidc.org/learn/parts-cryosphere/sea-ice), [Great Barrier Reef Marine Park Authority](https://www.gbrmpa.gov.au/learn/fascinating-facts-about-great-barrier-reef) and [National Park Service Grand Canyon facts](https://home.nps.gov/grca/faqs.htm).
 - **Greeting references:** [Japan National Tourism Organization](https://www.japan.travel/en/plan/japanese-language/) and standard everyday native greetings. The language label identifies the exact language selected, rather than implying one language per country.
 
 New animal references include [Virunga National Park’s okapi information](https://virunga.org/wildlife/mammals/okapi/) and [San Diego Zoo Safari Park](https://sdzsafaripark.org/animals/okapi).

@@ -106,3 +106,30 @@ dialog:not([open]){display:none}
 .country-dialog .scene-wrap{width:min(100%,65dvh,620px)}
 @media(max-width:700px){.country-dialog .country-heading{margin-bottom:10px}.country-dialog .country-heading h2{font-size:23px}.country-dialog .country-body{gap:16px}.country-dialog .scene-wrap{width:min(100%,40dvh,360px)}}
 @media(max-height:600px) and (min-width:701px){.country-dialog .country-heading{margin-bottom:10px}.country-dialog .scene-wrap{width:min(100%,65dvh)}}
+
+/* Large, child-friendly switches keep the globe as the home screen. */
+.map-switches{position:absolute;top:calc(78px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:9px;width:min(740px,calc(100vw - 24px));pointer-events:none}
+.layer-tabs{display:flex;justify-content:center;gap:5px;padding:5px;background:#fffdf4f5;border:1px solid #d7e5cf;border-radius:22px;box-shadow:0 3px 12px #345a3d12;pointer-events:auto;width:max-content;max-width:100%;margin:0 auto}
+.layer-tabs button{min-height:46px;padding:10px 22px;border-radius:17px;font-weight:800;font-size:16px}
+.layer-tabs button.active{background:#ffe09a;box-shadow:0 2px 0 #dfbb6a}
+.nature-tabs{display:flex;gap:6px;overflow-x:auto;max-width:100%;padding:5px 3px 9px;pointer-events:auto;scrollbar-width:thin}
+.nature-tabs button{white-space:nowrap;flex-shrink:0;min-height:44px;border:1px solid #d6e4cf;border-radius:18px;padding:10px 14px;background:#fffdf4f5;font-size:13px}
+.nature-tabs button.active{background:#d7edc4;border-color:#6b9b67;box-shadow:0 2px 0 #94b785}
+.search-dialog .nature-tabs{margin-bottom:12px}
+.passport-page>.layer-tabs{margin-bottom:16px}
+.nature-stamp-icon{font-size:52px;height:100px;display:grid;place-items:center}
+.nature-dialog{inset:0;width:100%;max-width:none;height:100dvh;max-height:none;margin:0;border:0;border-radius:0;padding:max(18px,env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) max(18px,env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));background:#fffdf4}
+.nature-dialog[open]{display:flex;flex-direction:column}
+.nature-panel{width:100%;max-width:1040px;margin:auto;display:flex;flex:1;flex-direction:column}
+.nature-panel .country-heading{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.nature-panel h2{flex:1;font-size:clamp(22px,3vw,36px);line-height:1.25;margin:0}
+.nature-panel .popup-close{width:64px;height:64px;min-width:64px;font-size:42px;background:#ffe09a;border:2px solid #e6bc61;box-shadow:0 4px 0 #dcb75c}
+.nature-body{flex:1;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}
+.nature-scene{position:relative;width:min(100%,62dvh,500px);margin:auto;aspect-ratio:1}
+.nature-shape{width:100%;height:auto;filter:drop-shadow(0 8px 6px #28758c20)}
+.nature-scene img{position:absolute;width:36%;height:auto;bottom:0;inset-inline-start:0;filter:drop-shadow(0 4px 4px #34543e20)}
+.nature-story{padding:24px;border:1px solid #dce6cb;background:#f0f6e6;border-radius:28px}
+.nature-story p{font-size:clamp(21px,2.5vw,29px);line-height:1.7;margin:16px 0 25px}
+.nature-story .primary-button{min-height:56px;max-width:100%}
+@media(max-width:700px){.map-switches{top:calc(72px + env(safe-area-inset-top,0px));gap:4px}.layer-tabs button{font-size:14px;padding:8px 18px;min-height:44px}.nature-tabs button{font-size:12px;padding:8px 12px}.nature-home .world-stage{transform:translateY(24px);width:min(105vw,calc(100dvh - 240px));height:min(105vw,calc(100dvh - 240px))}.nature-home .world-zoom{top:55%}.nature-body{grid-template-columns:1fr;gap:12px;align-content:center}.nature-scene{width:min(100%,34dvh,330px)}.nature-story{padding:18px}.nature-story p{font-size:20px;line-height:1.55;margin:8px 0 16px}.nature-panel .popup-close{width:55px;height:55px;min-width:55px;min-height:55px;font-size:36px}.nature-stamp-icon{font-size:42px;height:80px}}
+@media(max-height:600px) and (min-width:701px){.map-switches{top:63px;width:min(640px,75vw);gap:2px}.map-switches .layer-tabs button{min-height:40px;padding:6px 20px}.nature-tabs button{min-height:38px;padding:6px 12px}.nature-home .world-stage{transform:translateY(28px);width:calc(100dvh - 155px);height:calc(100dvh - 155px)}.nature-body{gap:18px}.nature-story{padding:18px}.nature-story p{font-size:20px;margin:10px 0 16px}.nature-panel .popup-close{min-height:50px;height:50px;width:50px;min-width:50px;font-size:34px}.games-dialog .game-cards{grid-template-columns:repeat(3,1fr)}.games-dialog .game-card{min-height:120px}.games-dialog .game-illustration{height:45px;margin-bottom:8px}}

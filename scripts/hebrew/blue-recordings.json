@@ -6380,6 +6380,1646 @@
       "seconds": 0.8359183673469388,
       "peak": 0.5149796605110168,
       "sampleRate": 44100
+    },
+    "האוקיינוס השקט": {
+      "input": "האוקיינוס השקט",
+      "ipa": "haʔokjˈanos haʃakˈet",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-86cc3772397c1f795266.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.8483254313468933,
+      "sampleRate": 44100
+    },
+    "האוקיינוס השקט הוא הגדול באוקיינוסים. הוא משתרע בין אמריקה לבין אסיה ואוסטרליה.": {
+      "input": "האוקיינוס השקט הוא הגדול באוקיינוסים. הוא משתרע בין אמריקה לבין אסיה ואוסטרליה.",
+      "ipa": "haʔokjˈanos haʃakˈet hˈu haɡadˈol baʔokjˈanosim. hˈu mistaʁˈea bˈen ʔameʁikˈa levˈen ʔˈasja veʔostʁˈalja.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-417e196cd8a798329cd0.mp3",
+      "seed": 20261025,
+      "seconds": 6.617687074829932,
+      "peak": 0.9577560424804688,
+      "sampleRate": 44100
+    },
+    "איפה האוקיינוס השקט?": {
+      "input": "איפה האוקיינוס השקט?",
+      "ipa": "ʔˈejfo haʔokjˈanos haʃakˈet?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-5c9ec5d25085adafff16.mp3",
+      "seed": 20261025,
+      "seconds": 1.6718367346938776,
+      "peak": 0.9148114919662476,
+      "sampleRate": 44100
+    },
+    "האוקיינוס האטלנטי": {
+      "input": "האוקיינוס האטלנטי",
+      "ipa": "haʔokjˈanos haʔatlˈanti",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-6b2eca61a3ce4654dd89.mp3",
+      "seed": 20261025,
+      "seconds": 1.6021768707482993,
+      "peak": 0.9608930349349976,
+      "sampleRate": 44100
+    },
+    "האוקיינוס האטלנטי נמצא בין אמריקה לבין אירופה ואפריקה.": {
+      "input": "האוקיינוס האטלנטי נמצא בין אמריקה לבין אירופה ואפריקה.",
+      "ipa": "haʔokijˈanos haʔatlˈanti nimtsˈa bˈen ʔameʁikˈa levˈen ʔejʁopˈa veʔafʁikˈa.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-fc59dc066bdf4f9af30a.mp3",
+      "seed": 20261025,
+      "seconds": 4.527891156462585,
+      "peak": 0.8703960180282593,
+      "sampleRate": 44100
+    },
+    "איפה האוקיינוס האטלנטי?": {
+      "input": "איפה האוקיינוס האטלנטי?",
+      "ipa": "ʔˈejfo haʔokjˈanos haʔatlˈanti?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-60ed42da0f1c29acab2e.mp3",
+      "seed": 20261025,
+      "seconds": 1.8808163265306121,
+      "peak": 0.8874579668045044,
+      "sampleRate": 44100
+    },
+    "האוקיינוס ההודי": {
+      "input": "האוקיינוס ההודי",
+      "ipa": "haʔokjˈanos hahˈodi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-11bd41a33fc8110c0bc3.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.7759526371955872,
+      "sampleRate": 44100
+    },
+    "האוקיינוס ההודי נמצא בין אפריקה, אסיה ואוסטרליה.": {
+      "input": "האוקיינוס ההודי נמצא בין אפריקה, אסיה ואוסטרליה.",
+      "ipa": "haʔokijˈanos hahˈodi nimtsˈa bˈen ʔafʁikˈa, ʔˈasja veʔostʁˈalja.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-ef018707fc7682b1574e.mp3",
+      "seed": 20261025,
+      "seconds": 3.9706122448979593,
+      "peak": 0.8774286508560181,
+      "sampleRate": 44100
+    },
+    "איפה האוקיינוס ההודי?": {
+      "input": "איפה האוקיינוס ההודי?",
+      "ipa": "ʔˈejfo haʔokjˈanos hahˈodi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-00898c0d599bb94f88ad.mp3",
+      "seed": 20261025,
+      "seconds": 1.5325170068027212,
+      "peak": 0.9162793159484863,
+      "sampleRate": 44100
+    },
+    "האוקיינוס הדרומי": {
+      "input": "האוקיינוס הדרומי",
+      "ipa": "haʔokjˈanos hadʁomˈi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-d9c4fecb5b768ddd5e93.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.6874917149543762,
+      "sampleRate": 44100
+    },
+    "האוקיינוס הדרומי מקיף את יבשת אנטרקטיקה הקפואה.": {
+      "input": "האוקיינוס הדרומי מקיף את יבשת אנטרקטיקה הקפואה.",
+      "ipa": "haʔokijˈanos hadʁomˈi mekˈif ʔˈet jabˈeʃet ʔantˈaʁktika hakfuʔˈa.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-2006d823b11b15170fc6.mp3",
+      "seed": 20261025,
+      "seconds": 3.900952380952381,
+      "peak": 0.7772127389907837,
+      "sampleRate": 44100
+    },
+    "איפה האוקיינוס הדרומי?": {
+      "input": "איפה האוקיינוס הדרומי?",
+      "ipa": "ʔˈejfo haʔokjˈanos hadʁomˈi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-97f03fd36398acc1a209.mp3",
+      "seed": 20261025,
+      "seconds": 1.6021768707482993,
+      "peak": 0.9253822565078735,
+      "sampleRate": 44100
+    },
+    "אוקיינוס הקרח הצפוני": {
+      "input": "אוקיינוס הקרח הצפוני",
+      "ipa": "ʔokjˈanos hakˈeʁaχ hatsfonˈi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-3aef5738b36f8c0e34eb.mp3",
+      "seed": 20261025,
+      "seconds": 1.7414965986394557,
+      "peak": 0.8207141160964966,
+      "sampleRate": 44100
+    },
+    "אוקיינוס הקרח הצפוני הוא הקטן באוקיינוסים. הוא נמצא סביב הקוטב הצפוני.": {
+      "input": "אוקיינוס הקרח הצפוני הוא הקטן באוקיינוסים. הוא נמצא סביב הקוטב הצפוני.",
+      "ipa": "ʔokijˈanos hakˈeʁaχ hatsfonˈi hˈu hakatˈan baʔokjˈanosim. hˈu nimtsˈa svˈiv hakˈotev hatsfonˈi.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-9d1f133830971d7159b6.mp3",
+      "seed": 20261025,
+      "seconds": 6.060408163265306,
+      "peak": 0.9734337329864502,
+      "sampleRate": 44100
+    },
+    "איפה אוקיינוס הקרח הצפוני?": {
+      "input": "איפה אוקיינוס הקרח הצפוני?",
+      "ipa": "ʔˈejfo ʔokjˈanos hakˈeʁaχ hatsfonˈi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-fa8009186c8062dfde44.mp3",
+      "seed": 20261025,
+      "seconds": 2.020136054421769,
+      "peak": 0.8418644070625305,
+      "sampleRate": 44100
+    },
+    "האזור הארקטי": {
+      "input": "האזור הארקטי",
+      "ipa": "haʔezˈoʁ haʔaʁˈakti",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-6485b93d0b7b8c33588b.mp3",
+      "seed": 20261025,
+      "seconds": 1.4628571428571429,
+      "peak": 0.8045556545257568,
+      "sampleRate": 44100
+    },
+    "האזור הארקטי מקיף את הקוטב הצפוני, ויש בו ים, איים ויבשה צפונית.": {
+      "input": "האזור הארקטי מקיף את הקוטב הצפוני, ויש בו ים, איים ויבשה צפונית.",
+      "ipa": "haʔezˈoʁ haʔaʁˈakti mekˈif ʔˈet hakˈotev hatsfonˈi, vejˈeʃ bˈo jˈam, ʔijˈim vejabaʃˈa tsfonˈit.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-34e2fc15968e52b7f4ca.mp3",
+      "seed": 20261025,
+      "seconds": 5.851428571428571,
+      "peak": 0.9054405689239502,
+      "sampleRate": 44100
+    },
+    "איפה האזור הארקטי?": {
+      "input": "איפה האזור הארקטי?",
+      "ipa": "ʔˈejfo haʔezˈoʁ haʔaʁˈakti?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-d9dfa13ce7d96ae2eb93.mp3",
+      "seed": 20261025,
+      "seconds": 1.7414965986394557,
+      "peak": 0.935043215751648,
+      "sampleRate": 44100
+    },
+    "אנטרקטיקה": {
+      "input": "אנטרקטיקה",
+      "ipa": "ʔantˈaʁktika",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-514238cdfa363bbf6cd3.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.8905947804450989,
+      "sampleRate": 44100
+    },
+    "אנטרקטיקה היא יבשת מכוסה קרח סביב הקוטב הדרומי. האוקיינוס הדרומי מקיף אותה.": {
+      "input": "אנטרקטיקה היא יבשת מכוסה קרח סביב הקוטב הדרומי. האוקיינוס הדרומי מקיף אותה.",
+      "ipa": "ʔantˈaʁktika hˈi jabˈeʃet meχusˈa kˈeʁaχ svˈiv hakˈotev hadʁomˈi. haʔokijˈanos hadʁomˈi makˈif ʔotˈa.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-a7434a7a5ca6b726ed11.mp3",
+      "seed": 20261025,
+      "seconds": 6.2693877551020405,
+      "peak": 0.8821588158607483,
+      "sampleRate": 44100
+    },
+    "איפה אנטרקטיקה?": {
+      "input": "איפה אנטרקטיקה?",
+      "ipa": "ʔˈejfo ʔantˈaʁktika?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-20dd8ee99ed5cd6f7ed9.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.7842474579811096,
+      "sampleRate": 44100
+    },
+    "הים התיכון": {
+      "input": "הים התיכון",
+      "ipa": "hajˈam hatiχˈon",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-587966bc42c21aa95339.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.9520009756088257,
+      "sampleRate": 44100
+    },
+    "הים התיכון נמצא בין אירופה, אפריקה ואסיה. לישראל יש חוף בים הזה.": {
+      "input": "הים התיכון נמצא בין אירופה, אפריקה ואסיה. לישראל יש חוף בים הזה.",
+      "ipa": "hajˈam hatiχˈon nimtsˈa bˈen ʔejʁopˈa, ʔafʁikˈa veʔˈasja. lejisʁaʔˈel jˈeʃ χˈof bajˈam hazˈe.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-68eb2dccd1e217f2cba8.mp3",
+      "seed": 20261025,
+      "seconds": 5.642448979591837,
+      "peak": 0.9081664085388184,
+      "sampleRate": 44100
+    },
+    "איפה הים התיכון?": {
+      "input": "איפה הים התיכון?",
+      "ipa": "ʔˈejfo hajˈam hatiχˈon?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-e6167bb813cfde2b2c42.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.7716927528381348,
+      "sampleRate": 44100
+    },
+    "הים השחור": {
+      "input": "הים השחור",
+      "ipa": "hajˈam haʃaχˈoʁ",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-483cb845c95a237d73ee.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.8476040363311768,
+      "sampleRate": 44100
+    },
+    "הים השחור נמצא בין דרום מזרח אירופה למערב אסיה.": {
+      "input": "הים השחור נמצא בין דרום מזרח אירופה למערב אסיה.",
+      "ipa": "hajˈam haʃaχˈoʁ nimtsˈa bˈejn dʁˈom mizʁˈaχ ʔejʁopˈa lemaʔaʁˈav ʔˈasja.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-f2f7c92c0993986ee677.mp3",
+      "seed": 20261025,
+      "seconds": 4.458231292517007,
+      "peak": 0.9481459856033325,
+      "sampleRate": 44100
+    },
+    "איפה הים השחור?": {
+      "input": "איפה הים השחור?",
+      "ipa": "ʔˈejfo hajˈam haʃaχˈoʁ?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-32f303fabce7817ff8d9.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.6911040544509888,
+      "sampleRate": 44100
+    },
+    "הים האדום": {
+      "input": "הים האדום",
+      "ipa": "hajˈam haʔadˈom",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-98a5a0c2afde6927702a.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.9624657034873962,
+      "sampleRate": 44100
+    },
+    "הים האדום הוא ים ארוך וצר בין אפריקה לחצי האי ערב.": {
+      "input": "הים האדום הוא ים ארוך וצר בין אפריקה לחצי האי ערב.",
+      "ipa": "hajˈam haʔadˈom hˈu jˈam ʔaʁˈoχ vetsˈaʁ bˈen ʔafʁikˈa leχatsˈi haʔˈi ʔaʁˈav.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-12a458a701eec7ae22a6.mp3",
+      "seed": 20261025,
+      "seconds": 4.806530612244898,
+      "peak": 0.9848431348800659,
+      "sampleRate": 44100
+    },
+    "איפה הים האדום?": {
+      "input": "איפה הים האדום?",
+      "ipa": "ʔˈejfo hajˈam haʔadˈom?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-6d8992ea8604e673c1ed.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.7145106196403503,
+      "sampleRate": 44100
+    },
+    "הים הערבי": {
+      "input": "הים הערבי",
+      "ipa": "hajˈam haʔaʁvˈi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-9960b61c52a1b896ec04.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.8872186541557312,
+      "sampleRate": 44100
+    },
+    "הים הערבי הוא חלק מהאוקיינוס ההודי, ליד חצי האי ערב והודו.": {
+      "input": "הים הערבי הוא חלק מהאוקיינוס ההודי, ליד חצי האי ערב והודו.",
+      "ipa": "hajˈam haʔaʁvˈi hˈu χˈelek mehaʔokijˈanos hahˈodi, lejˈad χatsˈi haʔˈi ʔaʁˈav vehˈodu.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-899e7870b6d7cb882720.mp3",
+      "seed": 20261025,
+      "seconds": 5.363809523809524,
+      "peak": 0.9695528149604797,
+      "sampleRate": 44100
+    },
+    "איפה הים הערבי?": {
+      "input": "איפה הים הערבי?",
+      "ipa": "ʔˈejfo hajˈam haʔaʁvˈi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-399e5a0828d0da939cc5.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.7760904431343079,
+      "sampleRate": 44100
+    },
+    "הים הקריבי": {
+      "input": "הים הקריבי",
+      "ipa": "hajˈam hakaʁˈivi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-e12ac164ae7742e1fbdd.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.8484205007553101,
+      "sampleRate": 44100
+    },
+    "הים הקריבי נמצא בין אמריקה המרכזית, אמריקה הדרומית והאיים הקריביים.": {
+      "input": "הים הקריבי נמצא בין אמריקה המרכזית, אמריקה הדרומית והאיים הקריביים.",
+      "ipa": "hajˈam hakaʁˈivi nimtsˈa bˈen ʔameʁikˈa hameʁkazˈit, ʔameʁikˈa hadʁomˈit vehaʔijˈim hakaʁˈivijim.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-f56451a5016f8ae9c008.mp3",
+      "seed": 20261025,
+      "seconds": 6.408707482993197,
+      "peak": 0.9118458032608032,
+      "sampleRate": 44100
+    },
+    "איפה הים הקריבי?": {
+      "input": "איפה הים הקריבי?",
+      "ipa": "ʔˈejfo hajˈam hakaʁˈivi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-a605533588a9f8cff9a0.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.8555747270584106,
+      "sampleRate": 44100
+    },
+    "ים סין הדרומי": {
+      "input": "ים סין הדרומי",
+      "ipa": "jˈam sˈin hadʁomˈi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-c89319654618e2e8f98f.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.9685072898864746,
+      "sampleRate": 44100
+    },
+    "ים סין הדרומי נמצא ליד דרום סין ודרום מזרח אסיה.": {
+      "input": "ים סין הדרומי נמצא ליד דרום סין ודרום מזרח אסיה.",
+      "ipa": "jˈam sˈin hadʁomˈi nimtsˈa lejˈad dʁˈom sˈin vedʁˈom mizʁˈaχ ʔˈasja.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-37f1e105bd2dbf3008f8.mp3",
+      "seed": 20261025,
+      "seconds": 4.1099319727891155,
+      "peak": 0.8780819177627563,
+      "sampleRate": 44100
+    },
+    "איפה ים סין הדרומי?": {
+      "input": "איפה ים סין הדרומי?",
+      "ipa": "ʔˈejfo jˈam sˈin hadʁomˈi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-0b22d2545d0f05bc272f.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.7716196775436401,
+      "sampleRate": 44100
+    },
+    "ים ברינג": {
+      "input": "ים ברינג",
+      "ipa": "jˈam bʁˈinɡ",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-a2ef88206ee686bb1fcc.mp3",
+      "seed": 20261025,
+      "seconds": 0.6965986394557823,
+      "peak": 0.9644581079483032,
+      "sampleRate": 44100
+    },
+    "ים ברינג נמצא בין אלסקה למזרח רוסיה, ליד האזור הארקטי.": {
+      "input": "ים ברינג נמצא בין אלסקה למזרח רוסיה, ליד האזור הארקטי.",
+      "ipa": "jˈam bʁˈinɡ nimtsˈa bˈen ʔalˈaska lemizʁˈaχ ʁusjˈa, lejˈad haʔezˈoʁ haʔaʁˈakti.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-1996929a402741268bf2.mp3",
+      "seed": 20261025,
+      "seconds": 4.9458503401360545,
+      "peak": 0.9420580863952637,
+      "sampleRate": 44100
+    },
+    "איפה ים ברינג?": {
+      "input": "איפה ים ברינג?",
+      "ipa": "ʔˈejfo jˈam bʁˈinɡ?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-43fa0400aa7ed129e215.mp3",
+      "seed": 20261025,
+      "seconds": 0.905578231292517,
+      "peak": 0.6789957284927368,
+      "sampleRate": 44100
+    },
+    "הים הבלטי": {
+      "input": "הים הבלטי",
+      "ipa": "hajˈam habˈalti",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-04a936608435ef43d12b.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.7818968296051025,
+      "sampleRate": 44100
+    },
+    "הים הבלטי נמצא בצפון אירופה, ליד שוודיה, פינלנד והמדינות הבלטיות.": {
+      "input": "הים הבלטי נמצא בצפון אירופה, ליד שוודיה, פינלנד והמדינות הבלטיות.",
+      "ipa": "hajˈam habˈalti nimtsˈa betsfˈon ʔejʁopˈa, lejˈad ʃvedjˈa, finlˈand vehamedinˈot habˈaltijot.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-6e4965389f6d2b82856b.mp3",
+      "seed": 20261025,
+      "seconds": 5.572789115646258,
+      "peak": 0.9275684356689453,
+      "sampleRate": 44100
+    },
+    "איפה הים הבלטי?": {
+      "input": "איפה הים הבלטי?",
+      "ipa": "ʔˈejfo hajˈam habˈalti?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-856bad1ba5c7a8c72eea.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.8718377947807312,
+      "sampleRate": 44100
+    },
+    "הים הצפוני": {
+      "input": "הים הצפוני",
+      "ipa": "hajˈam hatsfonˈi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-0a12949feb52441ba701.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.9178072214126587,
+      "sampleRate": 44100
+    },
+    "הים הצפוני נמצא בין בריטניה ליבשת אירופה הצפונית.": {
+      "input": "הים הצפוני נמצא בין בריטניה ליבשת אירופה הצפונית.",
+      "ipa": "hajˈam hatsfonˈi nimtsˈa bˈen bʁitˈanja lejabˈeʃet ʔejʁopˈa hatsfonˈit.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-a737def2c59e31124ba1.mp3",
+      "seed": 20261025,
+      "seconds": 4.1099319727891155,
+      "peak": 0.960777997970581,
+      "sampleRate": 44100
+    },
+    "איפה הים הצפוני?": {
+      "input": "איפה הים הצפוני?",
+      "ipa": "ʔˈejfo hajˈam hatsfonˈi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-498bb299a2832b7c6e61.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.841269850730896,
+      "sampleRate": 44100
+    },
+    "הים הכספי": {
+      "input": "הים הכספי",
+      "ipa": "hajˈam hakaspˈi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-d6fbb836bcb1548fa36e.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.8568779230117798,
+      "sampleRate": 44100
+    },
+    "למרות שמו, הים הכספי הוא אגם סגור בין אירופה לאסיה.": {
+      "input": "למרות שמו, הים הכספי הוא אגם סגור בין אירופה לאסיה.",
+      "ipa": "lamʁˈot ʃmˈo, hajˈam hakaspˈi hˈu ʔaɡˈam saɡˈuʁ bˈen ʔejʁopˈa leʔˈasja.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-c5303209cddd056bef44.mp3",
+      "seed": 20261025,
+      "seconds": 4.597551020408163,
+      "peak": 0.9064691066741943,
+      "sampleRate": 44100
+    },
+    "איפה הים הכספי?": {
+      "input": "איפה הים הכספי?",
+      "ipa": "ʔˈejfo hajˈam hakaspˈi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-4a57cc1afdb37d8e2c9b.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.7941075563430786,
+      "sampleRate": 44100
+    },
+    "ים המלח": {
+      "input": "ים המלח",
+      "ipa": "jˈam hamˈelaχ",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-2fc991efac06372a093a.mp3",
+      "seed": 20261025,
+      "seconds": 0.905578231292517,
+      "peak": 0.950386643409729,
+      "sampleRate": 44100
+    },
+    "ים המלח הוא אגם מלוח מאוד בבקעת הירדן.": {
+      "input": "ים המלח הוא אגם מלוח מאוד בבקעת הירדן.",
+      "ipa": "jˈam hamˈelaχ hˈu ʔaɡˈam malˈuaχ meʔˈod bebikʔˈat hajaʁdˈen.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-541d0fdc60e3c1a70ae2.mp3",
+      "seed": 20261025,
+      "seconds": 3.622312925170068,
+      "peak": 0.9704798460006714,
+      "sampleRate": 44100
+    },
+    "איפה ים המלח?": {
+      "input": "איפה ים המלח?",
+      "ipa": "ʔˈejfo jˈam hamˈelaχ?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-05f7a62d3fd68fed3d66.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.7957062721252441,
+      "sampleRate": 44100
+    },
+    "הכינרת": {
+      "input": "הכינרת",
+      "ipa": "hakinˈeʁet",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-f17999897c02696c43c8.mp3",
+      "seed": 20261025,
+      "seconds": 0.7662585034013606,
+      "peak": 0.6233256459236145,
+      "sampleRate": 44100
+    },
+    "הכינרת היא אגם של מים מתוקים בצפון ישראל.": {
+      "input": "הכינרת היא אגם של מים מתוקים בצפון ישראל.",
+      "ipa": "hakinˈeʁet hˈi ʔaɡˈam ʃˈel mˈajim metukˈim betsfˈon jisʁaʔˈel.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-535eea3c50baca2987b0.mp3",
+      "seed": 20261025,
+      "seconds": 3.5526530612244898,
+      "peak": 0.7983584403991699,
+      "sampleRate": 44100
+    },
+    "איפה הכינרת?": {
+      "input": "איפה הכינרת?",
+      "ipa": "ʔˈejfo hakinˈeʁet?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-cc36330290dd7397cab0.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.8303096890449524,
+      "sampleRate": 44100
+    },
+    "אגם ויקטוריה": {
+      "input": "אגם ויקטוריה",
+      "ipa": "ʔaɡˈam viktˈoʁja",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-4578f500ee869e1a971f.mp3",
+      "seed": 20261025,
+      "seconds": 1.0448979591836736,
+      "peak": 0.9446675777435303,
+      "sampleRate": 44100
+    },
+    "אגם ויקטוריה הוא אגם גדול של מים מתוקים במזרח אפריקה.": {
+      "input": "אגם ויקטוריה הוא אגם גדול של מים מתוקים במזרח אפריקה.",
+      "ipa": "ʔaɡˈam viktˈoʁja hˈu ʔaɡˈam ɡadˈol ʃˈel mˈajim metukˈim bemizʁˈaχ ʔafʁikˈa.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-ce222a34f54b878146e5.mp3",
+      "seed": 20261025,
+      "seconds": 4.597551020408163,
+      "peak": 0.9385157823562622,
+      "sampleRate": 44100
+    },
+    "איפה אגם ויקטוריה?": {
+      "input": "איפה אגם ויקטוריה?",
+      "ipa": "ʔˈejfo ʔaɡˈam viktˈoʁja?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-79c9ce47e395c5fa8d4d.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.6518615484237671,
+      "sampleRate": 44100
+    },
+    "ימת באיקל": {
+      "input": "ימת באיקל",
+      "ipa": "jamˈat beʔikˈel",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-1e5de51b40ea5f83f593.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.5934315323829651,
+      "sampleRate": 44100
+    },
+    "ימת באיקל היא אגם עמוק מאוד של מים מתוקים בסיביר שברוסיה.": {
+      "input": "ימת באיקל היא אגם עמוק מאוד של מים מתוקים בסיביר שברוסיה.",
+      "ipa": "jemˈat bˈakel hˈi ʔaɡˈam ʔamˈok meʔˈod ʃˈel mˈajim metukˈim besibˈiʁ ʃebeʁusjˈa.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-c4476c74bda19070a93d.mp3",
+      "seed": 20261025,
+      "seconds": 4.73687074829932,
+      "peak": 0.9371299147605896,
+      "sampleRate": 44100
+    },
+    "איפה ימת באיקל?": {
+      "input": "איפה ימת באיקל?",
+      "ipa": "ʔˈejfo jˈamt beʔˈikel?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-fb9a14eca061428a6017.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.8154903650283813,
+      "sampleRate": 44100
+    },
+    "הימות הגדולות": {
+      "input": "הימות הגדולות",
+      "ipa": "hajamˈot haɡdolˈot",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-b345b58cd0816c969f88.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.5984752178192139,
+      "sampleRate": 44100
+    },
+    "הימות הגדולות הן חמישה אגמים גדולים בארצות הברית ובקנדה.": {
+      "input": "הימות הגדולות הן חמישה אגמים גדולים בארצות הברית ובקנדה.",
+      "ipa": "hajamˈot haɡdolˈot hˈen χamiʃˈa ʔaɡamˈim ɡdolˈim beʔaʁtsˈot habʁˈit ubekˈanada.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-50a84722075e6ae63244.mp3",
+      "seed": 20261025,
+      "seconds": 4.73687074829932,
+      "peak": 0.7892589569091797,
+      "sampleRate": 44100
+    },
+    "איפה הימות הגדולות?": {
+      "input": "איפה הימות הגדולות?",
+      "ipa": "ʔˈejfo hajamˈot haɡdolˈot?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-304fbaf3f5cd61a5b158.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.9104834198951721,
+      "sampleRate": 44100
+    },
+    "הרי ההימלאיה": {
+      "input": "הרי ההימלאיה",
+      "ipa": "haʁˈej hahimlˈaja",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-878504523f861c4d43c4.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.6958580613136292,
+      "sampleRate": 44100
+    },
+    "הרי ההימלאיה הם רכס הרים גבוה באסיה. הר האוורסט נמצא ברכס הזה.": {
+      "input": "הרי ההימלאיה הם רכס הרים גבוה באסיה. הר האוורסט נמצא ברכס הזה.",
+      "ipa": "haʁˈej hahimlˈaja hˈem ʁˈeχes haʁˈim ɡavˈoa beʔˈasja. hˈaʁ haʔˈeveʁest nimtsˈa baʁˈeχes hazˈe.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-27f171434c9252599dd2.mp3",
+      "seed": 20261025,
+      "seconds": 6.130068027210885,
+      "peak": 0.9576148390769958,
+      "sampleRate": 44100
+    },
+    "איפה הרי ההימלאיה?": {
+      "input": "איפה הרי ההימלאיה?",
+      "ipa": "ʔˈejfo haʁˈej hahimlˈaja?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-3264bb832d72a40907d5.mp3",
+      "seed": 20261025,
+      "seconds": 1.4628571428571429,
+      "peak": 0.7722250819206238,
+      "sampleRate": 44100
+    },
+    "הר האוורסט": {
+      "input": "הר האוורסט",
+      "ipa": "hˈaʁ haʔˈeveʁest",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-f71dfe835ed1821750af.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.7565977573394775,
+      "sampleRate": 44100
+    },
+    "הר האוורסט מתנשא בהרי ההימלאיה, על הגבול בין נפאל לסין.": {
+      "input": "הר האוורסט מתנשא בהרי ההימלאיה, על הגבול בין נפאל לסין.",
+      "ipa": "hˈaʁ haʔˈeveʁest mitnasˈe behaʁˈej hahimlˈaja, ʔˈal haɡvˈul bˈen nepˈal lesˈin.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-a35336c7b67399cd184c.mp3",
+      "seed": 20261025,
+      "seconds": 4.806530612244898,
+      "peak": 0.9305359125137329,
+      "sampleRate": 44100
+    },
+    "איפה הר האוורסט?": {
+      "input": "איפה הר האוורסט?",
+      "ipa": "ʔˈejfo hˈaʁ haʔˈeveʁest?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-795c45151c4787e355cb.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.8664324879646301,
+      "sampleRate": 44100
+    },
+    "הרי האנדים": {
+      "input": "הרי האנדים",
+      "ipa": "haʁˈej haʔanˈadim",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-d76712de6c42cfdfc8c3.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.7354325652122498,
+      "sampleRate": 44100
+    },
+    "הרי האנדים נמשכים לאורך הצד המערבי של אמריקה הדרומית.": {
+      "input": "הרי האנדים נמשכים לאורך הצד המערבי של אמריקה הדרומית.",
+      "ipa": "haʁˈej haʔˈandim nimʃaχˈim leʔˈoʁeχ hatsˈad hamaʔaʁavˈi ʃˈel ʔameʁikˈa hadʁomˈit.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-c57ece008f4a27b2ce89.mp3",
+      "seed": 20261025,
+      "seconds": 5.085170068027211,
+      "peak": 0.9252104759216309,
+      "sampleRate": 44100
+    },
+    "איפה הרי האנדים?": {
+      "input": "איפה הרי האנדים?",
+      "ipa": "ʔˈejfo haʁˈej haʔˈandim?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-800d8867b44a96c05cfe.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.8740760087966919,
+      "sampleRate": 44100
+    },
+    "הרי הרוקי": {
+      "input": "הרי הרוקי",
+      "ipa": "haʁˈej haʁˈoki",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-40bf18e38b81d5368815.mp3",
+      "seed": 20261025,
+      "seconds": 0.905578231292517,
+      "peak": 0.49912068247795105,
+      "sampleRate": 44100
+    },
+    "הרי הרוקי משתרעים במערב קנדה וארצות הברית.": {
+      "input": "הרי הרוקי משתרעים במערב קנדה וארצות הברית.",
+      "ipa": "haʁˈej haʁˈoki mistaʁʔˈim bemaʔaʁˈav kˈanada veʔaʁtsˈot habʁˈit.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-9e8ca94650b8c76d6378.mp3",
+      "seed": 20261025,
+      "seconds": 4.1099319727891155,
+      "peak": 0.9275541305541992,
+      "sampleRate": 44100
+    },
+    "איפה הרי הרוקי?": {
+      "input": "איפה הרי הרוקי?",
+      "ipa": "ʔˈejfo haʁˈej haʁˈoki?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-b7f1321d4f11fa5a7e1d.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.7392818927764893,
+      "sampleRate": 44100
+    },
+    "הרי האלפים": {
+      "input": "הרי האלפים",
+      "ipa": "haʁˈej haʔalafˈim",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-027f38748dce4444c76e.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.7033094167709351,
+      "sampleRate": 44100
+    },
+    "הרי האלפים הם רכס הרים באירופה, עם פסגות מושלגות ועמקים ירוקים.": {
+      "input": "הרי האלפים הם רכס הרים באירופה, עם פסגות מושלגות ועמקים ירוקים.",
+      "ipa": "haʁˈej haʔalafˈim hˈem ʁˈeχes haʁˈim beʔejʁopˈa, ʔˈim psaɡˈot muʃlaɡˈot veʔamakˈim jeʁukˈim.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-4a5e7338880a901b4535.mp3",
+      "seed": 20261025,
+      "seconds": 5.7817687074829935,
+      "peak": 0.9465651512145996,
+      "sampleRate": 44100
+    },
+    "איפה הרי האלפים?": {
+      "input": "איפה הרי האלפים?",
+      "ipa": "ʔˈejfo haʁˈej haʔalafˈim?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-0a760be376be73d58d34.mp3",
+      "seed": 20261025,
+      "seconds": 1.4628571428571429,
+      "peak": 0.7999764680862427,
+      "sampleRate": 44100
+    },
+    "הרי האטלס": {
+      "input": "הרי האטלס",
+      "ipa": "haʁˈej haʔˈatlas",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-d100f6c66d76919a0249.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.6323273181915283,
+      "sampleRate": 44100
+    },
+    "הרי האטלס נמצאים בצפון מערב אפריקה, ליד מדבר סהרה.": {
+      "input": "הרי האטלס נמצאים בצפון מערב אפריקה, ליד מדבר סהרה.",
+      "ipa": "haʁˈej haʔatlˈas nimtsaʔˈim betsfˈon maʔaʁˈav ʔafʁikˈa, lejˈad midbˈaʁ sahaʁˈa.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-3732bfeb1a7135b7da3d.mp3",
+      "seed": 20261025,
+      "seconds": 5.085170068027211,
+      "peak": 0.8888137936592102,
+      "sampleRate": 44100
+    },
+    "איפה הרי האטלס?": {
+      "input": "איפה הרי האטלס?",
+      "ipa": "ʔˈejfo haʁˈej haʔˈatlas?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-36c7a9edc87623d767a1.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.9239716529846191,
+      "sampleRate": 44100
+    },
+    "הרי אורל": {
+      "input": "הרי אורל",
+      "ipa": "haʁˈej ʔoʁˈel",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-d64a6c7582730167bc14.mp3",
+      "seed": 20261025,
+      "seconds": 0.8359183673469388,
+      "peak": 0.5761868953704834,
+      "sampleRate": 44100
+    },
+    "הרי אורל הם חלק מהגבול הגאוגרפי המקובל בין אירופה לאסיה.": {
+      "input": "הרי אורל הם חלק מהגבול הגאוגרפי המקובל בין אירופה לאסיה.",
+      "ipa": "haʁˈej ʔoʁˈel hˈem χˈelek mehaɡvˈul haɡeʔoɡʁˈafi hamekubˈal bˈen ʔejʁopˈa leʔˈasja.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-159c2d5c6ad4883fd0e0.mp3",
+      "seed": 20261025,
+      "seconds": 5.085170068027211,
+      "peak": 0.9562042951583862,
+      "sampleRate": 44100
+    },
+    "איפה הרי אורל?": {
+      "input": "איפה הרי אורל?",
+      "ipa": "ʔˈejfo haʁˈej ʔoʁˈel?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-6abec748c157dcdaef00.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.698670506477356,
+      "sampleRate": 44100
+    },
+    "מדבר סהרה": {
+      "input": "מדבר סהרה",
+      "ipa": "midbˈaʁ sahaʁˈa",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-803a798e2af231d69c79.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.683104932308197,
+      "sampleRate": 44100
+    },
+    "סהרה הוא מדבר ענק בצפון אפריקה. יש בו חול, סלעים והרים.": {
+      "input": "סהרה הוא מדבר ענק בצפון אפריקה. יש בו חול, סלעים והרים.",
+      "ipa": "sahaʁˈa hˈu midbˈaʁ ʔanˈak betsfˈon ʔafʁikˈa. jˈeʃ bˈo χˈol, slaʔˈim vehaʁˈim.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-9beecb58f9f1d5d4ba68.mp3",
+      "seed": 20261025,
+      "seconds": 4.806530612244898,
+      "peak": 0.8600175976753235,
+      "sampleRate": 44100
+    },
+    "איפה מדבר סהרה?": {
+      "input": "איפה מדבר סהרה?",
+      "ipa": "ʔˈejfo midbˈeʁ sahaʁˈa?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-43a31a4f42c4f778793a.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.66229248046875,
+      "sampleRate": 44100
+    },
+    "המדבר הערבי": {
+      "input": "המדבר הערבי",
+      "ipa": "hamidbˈaʁ haʔaʁvˈi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-1f2032399c75c40d24bb.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.7932195663452148,
+      "sampleRate": 44100
+    },
+    "המדבר הערבי מכסה חלק גדול מחצי האי ערב שבמערב אסיה.": {
+      "input": "המדבר הערבי מכסה חלק גדול מחצי האי ערב שבמערב אסיה.",
+      "ipa": "hamidbˈaʁ haʔaʁvˈi meχasˈe χˈelek ɡadˈol meχatsˈi haʔˈi ʔaʁˈav ʃebemaʔaʁˈav ʔˈasja.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-6300efa85045d51dafa1.mp3",
+      "seed": 20261025,
+      "seconds": 5.433469387755102,
+      "peak": 0.8843985199928284,
+      "sampleRate": 44100
+    },
+    "איפה המדבר הערבי?": {
+      "input": "איפה המדבר הערבי?",
+      "ipa": "ʔˈejfo hamidbˈaʁ haʔaʁvˈi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-c238d2970eeed803737c.mp3",
+      "seed": 20261025,
+      "seconds": 1.5325170068027212,
+      "peak": 0.9169564247131348,
+      "sampleRate": 44100
+    },
+    "מדבר גובי": {
+      "input": "מדבר גובי",
+      "ipa": "medabˈeʁ ɡˈubi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-0e8f1c6f5f571d600b12.mp3",
+      "seed": 20261025,
+      "seconds": 0.8359183673469388,
+      "peak": 0.7564615607261658,
+      "sampleRate": 44100
+    },
+    "גובי הוא מדבר במונגוליה ובצפון סין. החורף בו יכול להיות קר מאוד.": {
+      "input": "גובי הוא מדבר במונגוליה ובצפון סין. החורף בו יכול להיות קר מאוד.",
+      "ipa": "ɡˈubi hˈu medabˈeʁ bemonɡˈolja vevetsfˈon sˈin. haχˈoʁef bˈo jaχˈol lihjˈot kˈaʁ meʔˈod.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-f89b53d83f5dbee0013a.mp3",
+      "seed": 20261025,
+      "seconds": 5.154829931972789,
+      "peak": 0.9361944794654846,
+      "sampleRate": 44100
+    },
+    "איפה מדבר גובי?": {
+      "input": "איפה מדבר גובי?",
+      "ipa": "ʔˈejfo medabˈeʁ ɡˈubi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-61ae7fa1bc12c299ea0f.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.7438462376594543,
+      "sampleRate": 44100
+    },
+    "מדבר קלהרי": {
+      "input": "מדבר קלהרי",
+      "ipa": "midabˈeʁ kalhˈaʁi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-23f42dc0d0beb30d7830.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.6704250574111938,
+      "sampleRate": 44100
+    },
+    "קלהרי הוא אזור יבש ורחב בדרום אפריקה. חיים בו צמחים ובעלי חיים.": {
+      "input": "קלהרי הוא אזור יבש ורחב בדרום אפריקה. חיים בו צמחים ובעלי חיים.",
+      "ipa": "kalhˈaʁi hˈu ʔezˈoʁ javˈeʃ veʁaχˈav bedʁˈom ʔafʁikˈa. χajˈim bˈo tsmaχˈim vevaʔalˈej χajˈim.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-68cf4f7ec65c62c6e4b0.mp3",
+      "seed": 20261025,
+      "seconds": 5.642448979591837,
+      "peak": 0.9508156180381775,
+      "sampleRate": 44100
+    },
+    "איפה מדבר קלהרי?": {
+      "input": "איפה מדבר קלהרי?",
+      "ipa": "ʔˈejfo medabˈeʁ kalhˈaʁi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-c326a3be9280c80e458d.mp3",
+      "seed": 20261025,
+      "seconds": 1.4628571428571429,
+      "peak": 0.6914975643157959,
+      "sampleRate": 44100
+    },
+    "מדבר נמיב": {
+      "input": "מדבר נמיב",
+      "ipa": "medabˈeʁ namˈiv",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-1db36427844e883f0746.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.641238272190094,
+      "sampleRate": 44100
+    },
+    "מדבר נמיב נמצא לאורך חוף האוקיינוס האטלנטי בדרום מערב אפריקה.": {
+      "input": "מדבר נמיב נמצא לאורך חוף האוקיינוס האטלנטי בדרום מערב אפריקה.",
+      "ipa": "midbˈaʁ namˈiv nimtsˈa leʔˈoʁeχ χˈof haʔokijˈanos haʔatlˈanti bedʁˈom maʔaʁˈav ʔafʁikˈa.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-8bae8c9094a1e53a259b.mp3",
+      "seed": 20261025,
+      "seconds": 5.433469387755102,
+      "peak": 0.8266484141349792,
+      "sampleRate": 44100
+    },
+    "איפה מדבר נמיב?": {
+      "input": "איפה מדבר נמיב?",
+      "ipa": "ʔˈejfo medabˈeʁ namˈiv?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-224e1ed0aa25cfba4330.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.8181054592132568,
+      "sampleRate": 44100
+    },
+    "מדבר אטקמה": {
+      "input": "מדבר אטקמה",
+      "ipa": "midbˈeʁ ʔatˈakma",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-7faa342ceaa7a6c459cc.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.811876654624939,
+      "sampleRate": 44100
+    },
+    "אטקמה הוא מדבר יבש מאוד בצפון צ׳ילה, ליד האוקיינוס השקט.": {
+      "input": "אטקמה הוא מדבר יבש מאוד בצפון צ׳ילה, ליד האוקיינוס השקט.",
+      "ipa": "ʔatˈakma hˈu midbˈaʁ javˈeʃ meʔˈod betsfˈon tʃˈila, lejˈad haʔokjˈanos haʃakˈet.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-fe2eaf019f8d2cf8e159.mp3",
+      "seed": 20261025,
+      "seconds": 4.73687074829932,
+      "peak": 0.9473748803138733,
+      "sampleRate": 44100
+    },
+    "איפה מדבר אטקמה?": {
+      "input": "איפה מדבר אטקמה?",
+      "ipa": "ʔˈejfo medbˈeʁ ʔatˈakma?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-ad4a849ca45e64d1a792.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.852912962436676,
+      "sampleRate": 44100
+    },
+    "מדבר ויקטוריה הגדול": {
+      "input": "מדבר ויקטוריה הגדול",
+      "ipa": "midbˈaʁ viktˈoʁja haɡadˈol",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-addf78d03bec67f246a3.mp3",
+      "seed": 20261025,
+      "seconds": 1.5325170068027212,
+      "peak": 0.7945455312728882,
+      "sampleRate": 44100
+    },
+    "מדבר ויקטוריה הגדול נמצא בדרום אוסטרליה. הוא רחוק מאגם ויקטוריה שבאפריקה.": {
+      "input": "מדבר ויקטוריה הגדול נמצא בדרום אוסטרליה. הוא רחוק מאגם ויקטוריה שבאפריקה.",
+      "ipa": "midbˈaʁ viktˈoʁja haɡadˈol nimtsˈa bedʁˈom ʔostʁˈalja. hˈu ʁaχˈok meʔaɡˈam viktˈoʁja ʃebeʔafʁikˈa.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-31d1957f8eebd7bf86cf.mp3",
+      "seed": 20261025,
+      "seconds": 5.990748299319728,
+      "peak": 0.8928602337837219,
+      "sampleRate": 44100
+    },
+    "איפה מדבר ויקטוריה הגדול?": {
+      "input": "איפה מדבר ויקטוריה הגדול?",
+      "ipa": "ʔˈejfo midbˈaʁ viktˈoʁja haɡadˈol?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-6ea559e687748fc006b9.mp3",
+      "seed": 20261025,
+      "seconds": 1.8808163265306121,
+      "peak": 0.9132058620452881,
+      "sampleRate": 44100
+    },
+    "נהר הנילוס": {
+      "input": "נהר הנילוס",
+      "ipa": "nahˈaʁ hanˈilus",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-e40a85f5e11a6573b235.mp3",
+      "seed": 20261025,
+      "seconds": 1.0448979591836736,
+      "peak": 0.8088849782943726,
+      "sampleRate": 44100
+    },
+    "נהר הנילוס זורם בצפון מזרח אפריקה ונשפך לים התיכון.": {
+      "input": "נהר הנילוס זורם בצפון מזרח אפריקה ונשפך לים התיכון.",
+      "ipa": "nahˈaʁ hanˈilus zoʁˈem betsfˈon mizʁˈaχ ʔafʁikˈa veniʃpˈaχ lajˈam hatiχˈon.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-2eeffe90c2864e5c5f81.mp3",
+      "seed": 20261025,
+      "seconds": 4.458231292517007,
+      "peak": 0.9226869344711304,
+      "sampleRate": 44100
+    },
+    "איפה נהר הנילוס?": {
+      "input": "איפה נהר הנילוס?",
+      "ipa": "ʔˈejfo nahˈaʁ hanˈilus?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-250abb6de87599c114f8.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.8084599375724792,
+      "sampleRate": 44100
+    },
+    "נהר האמזונס": {
+      "input": "נהר האמזונס",
+      "ipa": "nahˈaʁ haʔamazˈons",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-0cf8b0af0ba7577334d9.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.7216734290122986,
+      "sampleRate": 44100
+    },
+    "האמזונס הוא נהר גדול הזורם בצפון אמריקה הדרומית אל האוקיינוס האטלנטי.": {
+      "input": "האמזונס הוא נהר גדול הזורם בצפון אמריקה הדרומית אל האוקיינוס האטלנטי.",
+      "ipa": "haʔamazˈons hˈu nahˈaʁ ɡadˈol hazoʁˈem betsfˈon ʔameʁikˈa hadʁomˈit ʔˈel haʔokjˈanos haʔatlˈanti.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-b31dbdef21b254448dfc.mp3",
+      "seed": 20261025,
+      "seconds": 6.2693877551020405,
+      "peak": 0.9309641718864441,
+      "sampleRate": 44100
+    },
+    "איפה נהר האמזונס?": {
+      "input": "איפה נהר האמזונס?",
+      "ipa": "ʔˈejfo nahˈaʁ haʔˈamazons?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-28b7aadbc709a8d1b743.mp3",
+      "seed": 20261025,
+      "seconds": 1.6021768707482993,
+      "peak": 0.9105716943740845,
+      "sampleRate": 44100
+    },
+    "נהר המיסיסיפי": {
+      "input": "נהר המיסיסיפי",
+      "ipa": "nahˈaʁ hamisisˈifi",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-1da686c057344023dc06.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.7825184464454651,
+      "sampleRate": 44100
+    },
+    "המיסיסיפי זורם דרומה במרכז ארצות הברית.": {
+      "input": "המיסיסיפי זורם דרומה במרכז ארצות הברית.",
+      "ipa": "hamisisˈipi zoʁˈem daʁˈoma bemeʁkˈaz ʔaʁtsˈot habʁˈit.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-813fd2b998a97f8bd7ef.mp3",
+      "seed": 20261025,
+      "seconds": 3.5526530612244898,
+      "peak": 0.8773549199104309,
+      "sampleRate": 44100
+    },
+    "איפה נהר המיסיסיפי?": {
+      "input": "איפה נהר המיסיסיפי?",
+      "ipa": "ʔˈejfo nahˈaʁ hamisisˈipi?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-d98facf59138b69032b2.mp3",
+      "seed": 20261025,
+      "seconds": 1.5325170068027212,
+      "peak": 0.8824155926704407,
+      "sampleRate": 44100
+    },
+    "נהר היאנגצה": {
+      "input": "נהר היאנגצה",
+      "ipa": "nahˈaʁ hajˈanɡtsa",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-ef15d6d34fd902bf2550.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.6135361194610596,
+      "sampleRate": 44100
+    },
+    "נהר היאנגצה זורם בסין, מההרים במערב אל הים במזרח.": {
+      "input": "נהר היאנגצה זורם בסין, מההרים במערב אל הים במזרח.",
+      "ipa": "nahˈaʁ hajˈanɡtsa zoʁˈem besˈin, mehahaʁˈim bamaʔaʁˈav ʔˈel hajˈam bamizʁˈaχ.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-b8526e5e7e79385bc7f4.mp3",
+      "seed": 20261025,
+      "seconds": 5.085170068027211,
+      "peak": 0.8587653636932373,
+      "sampleRate": 44100
+    },
+    "איפה נהר היאנגצה?": {
+      "input": "איפה נהר היאנגצה?",
+      "ipa": "ʔˈejfo nehˈaʁ hajˈanɡtsa?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-3b85dfd7709af471a293.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.903404176235199,
+      "sampleRate": 44100
+    },
+    "נהר הגנגס": {
+      "input": "נהר הגנגס",
+      "ipa": "nehˈaʁ haɡˈanɡes",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-5619b5dbbeb62ed9b7ea.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.890067458152771,
+      "sampleRate": 44100
+    },
+    "נהר הגנגס זורם מהרי ההימלאיה דרך הודו ובנגלדש.": {
+      "input": "נהר הגנגס זורם מהרי ההימלאיה דרך הודו ובנגלדש.",
+      "ipa": "nehˈaʁ haɡˈanɡes zoʁˈem mehaʁˈej hahimlˈaja dˈeʁeχ hˈodu vebanɡladˈeʃ.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-b12da4d2f682f683e2dd.mp3",
+      "seed": 20261025,
+      "seconds": 4.31891156462585,
+      "peak": 0.9603078365325928,
+      "sampleRate": 44100
+    },
+    "איפה נהר הגנגס?": {
+      "input": "איפה נהר הגנגס?",
+      "ipa": "ʔˈejfo nehˈaʁ haɡˈanɡes?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-dc571bff0a46d230111c.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.7422458529472351,
+      "sampleRate": 44100
+    },
+    "נהר הדנובה": {
+      "input": "נהר הדנובה",
+      "ipa": "nahˈaʁ hadnˈuba",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-35682eedfaae5c48015b.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.614473819732666,
+      "sampleRate": 44100
+    },
+    "הדנובה חוצה כמה מדינות באירופה ונשפכת לים השחור.": {
+      "input": "הדנובה חוצה כמה מדינות באירופה ונשפכת לים השחור.",
+      "ipa": "hadenˈova χotsˈa kˈama medinˈot beʔejʁopˈa veniʃpˈeχet lajˈam haʃaχˈoʁ.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-f950eb1d6c39b89e16ee.mp3",
+      "seed": 20261025,
+      "seconds": 4.249251700680272,
+      "peak": 0.893085241317749,
+      "sampleRate": 44100
+    },
+    "איפה נהר הדנובה?": {
+      "input": "איפה נהר הדנובה?",
+      "ipa": "ʔˈejfo nehˈaʁ hadenˈuba?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-06159f8dee913df24acb.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.7538337111473083,
+      "sampleRate": 44100
+    },
+    "נהר הקונגו": {
+      "input": "נהר הקונגו",
+      "ipa": "nahˈaʁ hakˈonɡo",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-e32a4253ea2dada72be6.mp3",
+      "seed": 20261025,
+      "seconds": 1.0448979591836736,
+      "peak": 0.6716777086257935,
+      "sampleRate": 44100
+    },
+    "נהר הקונגו מתפתל במרכז אפריקה ונשפך לאוקיינוס האטלנטי.": {
+      "input": "נהר הקונגו מתפתל במרכז אפריקה ונשפך לאוקיינוס האטלנטי.",
+      "ipa": "nahˈaʁ hakˈonɡo mitpatˈel bemeʁkˈaz ʔafʁikˈa veniʃpˈaχ laʔokijˈanos haʔatlˈanti.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-eaddfa72c0f9974d4c8f.mp3",
+      "seed": 20261025,
+      "seconds": 4.9458503401360545,
+      "peak": 0.9191223978996277,
+      "sampleRate": 44100
+    },
+    "איפה נהר הקונגו?": {
+      "input": "איפה נהר הקונגו?",
+      "ipa": "ʔˈejfo nahˈaʁ hakˈonɡo?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-e43fe2135a85b6649690.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.6709147691726685,
+      "sampleRate": 44100
+    },
+    "נהר המקונג": {
+      "input": "נהר המקונג",
+      "ipa": "nahˈaʁ hamakˈonɡ",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-aa6d2a8c4621b7a3b845.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.6827117800712585,
+      "sampleRate": 44100
+    },
+    "נהר המקונג זורם ביבשת דרום מזרח אסיה אל הים.": {
+      "input": "נהר המקונג זורם ביבשת דרום מזרח אסיה אל הים.",
+      "ipa": "nahˈaʁ hamakˈonɡ zoʁˈem bejabˈeʃet dʁˈom mizʁˈaχ ʔˈasja ʔˈel hajˈam.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-7c53109e42dd2756723d.mp3",
+      "seed": 20261025,
+      "seconds": 4.179591836734694,
+      "peak": 0.8302761912345886,
+      "sampleRate": 44100
+    },
+    "איפה נהר המקונג?": {
+      "input": "איפה נהר המקונג?",
+      "ipa": "ʔˈejfo nehˈaʁ hamakˈonɡ?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-02e8aaa1bd805131fe62.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.7369396686553955,
+      "sampleRate": 44100
+    },
+    "נהר הוולגה": {
+      "input": "נהר הוולגה",
+      "ipa": "nahˈaʁ havˈolɡa",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-483d58e34b51cc59cb6f.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.7660330533981323,
+      "sampleRate": 44100
+    },
+    "נהר הוולגה זורם במערב רוסיה ונשפך לים הכספי.": {
+      "input": "נהר הוולגה זורם במערב רוסיה ונשפך לים הכספי.",
+      "ipa": "nahˈaʁ havˈolɡa zoʁˈem bemaʔaʁˈav ʁusjˈa veniʃpˈaχ lajˈam hakaspˈi.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-0f4dc5921b12275099d1.mp3",
+      "seed": 20261025,
+      "seconds": 4.31891156462585,
+      "peak": 0.9630548357963562,
+      "sampleRate": 44100
+    },
+    "איפה נהר הוולגה?": {
+      "input": "איפה נהר הוולגה?",
+      "ipa": "ʔˈejfo nahˈaʁ havˈolɡa?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-b8b850dac1637b32998b.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.6889386773109436,
+      "sampleRate": 44100
+    },
+    "יער האמזונס": {
+      "input": "יער האמזונס",
+      "ipa": "jˈaʔaʁ haʔamazˈons",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-872123e51fde844d2103.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.9388495683670044,
+      "sampleRate": 44100
+    },
+    "יער האמזונס הוא יער גשם טרופי ענק באמריקה הדרומית, סביב נהר האמזונס.": {
+      "input": "יער האמזונס הוא יער גשם טרופי ענק באמריקה הדרומית, סביב נהר האמזונס.",
+      "ipa": "jˈaʔaʁ haʔamazˈons hˈu jˈaʔaʁ ɡˈeʃem tʁˈopi ʔanˈak beʔameʁikˈa hadʁomˈit, svˈiv nehˈaʁ haʔamazˈons.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-aaf2285a5e9e84bb301d.mp3",
+      "seed": 20261025,
+      "seconds": 6.548027210884354,
+      "peak": 0.9608468413352966,
+      "sampleRate": 44100
+    },
+    "איפה יער האמזונס?": {
+      "input": "איפה יער האמזונס?",
+      "ipa": "ʔˈejfo jˈaʔaʁ haʔamazˈons?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-e10028595b2011d040d6.mp3",
+      "seed": 20261025,
+      "seconds": 1.6021768707482993,
+      "peak": 0.9536353349685669,
+      "sampleRate": 44100
+    },
+    "יער הקונגו": {
+      "input": "יער הקונגו",
+      "ipa": "jˈaʔaʁ hakˈonɡo",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-79a507f21925eb722f95.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.8377898931503296,
+      "sampleRate": 44100
+    },
+    "יער הקונגו הוא יער גשם טרופי במרכז אפריקה, סביב נהר הקונגו.": {
+      "input": "יער הקונגו הוא יער גשם טרופי במרכז אפריקה, סביב נהר הקונגו.",
+      "ipa": "jˈaʔaʁ hakˈonɡo hˈu jˈaʔaʁ ɡˈeʃem tʁˈopi bemeʁkˈaz ʔafʁikˈa, svˈiv nehˈaʁ hakˈonɡo.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-6eb4d68fe53cfc37b795.mp3",
+      "seed": 20261025,
+      "seconds": 5.294149659863946,
+      "peak": 0.9156159162521362,
+      "sampleRate": 44100
+    },
+    "איפה יער הקונגו?": {
+      "input": "איפה יער הקונגו?",
+      "ipa": "ʔˈejfo jˈaʔaʁ hakˈonɡo?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-ed2e67867ff09162e7d3.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.806379497051239,
+      "sampleRate": 44100
+    },
+    "יער הטייגה": {
+      "input": "יער הטייגה",
+      "ipa": "jˈaʔaʁ hatˈajɡa",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-571c73f9be67a629c797.mp3",
+      "seed": 20261025,
+      "seconds": 1.1145578231292517,
+      "peak": 0.8246157765388489,
+      "sampleRate": 44100
+    },
+    "הטייגה היא חגורה של יערות צפוניים בחלקים מאירופה, אסיה ואמריקה הצפונית.": {
+      "input": "הטייגה היא חגורה של יערות צפוניים בחלקים מאירופה, אסיה ואמריקה הצפונית.",
+      "ipa": "hatˈajɡa hˈi χaɡuʁˈa ʃˈel jeʔaʁˈot tsfonijˈim beχalakˈim meʔejʁopˈa, ʔˈasja veʔameʁikˈa hatsfonˈit.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-f22573fcc0543e4e73eb.mp3",
+      "seed": 20261025,
+      "seconds": 6.060408163265306,
+      "peak": 0.9522543549537659,
+      "sampleRate": 44100
+    },
+    "איפה יער הטייגה?": {
+      "input": "איפה יער הטייגה?",
+      "ipa": "ʔˈejfo jˈaʔaʁ hatˈajɡa?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-b2efc1e96ef0dbaee9a7.mp3",
+      "seed": 20261025,
+      "seconds": 1.3931972789115645,
+      "peak": 0.849002480506897,
+      "sampleRate": 44100
+    },
+    "שונית המחסום הגדולה": {
+      "input": "שונית המחסום הגדולה",
+      "ipa": "ʃonˈit hamaχsˈum haɡdolˈa",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-c6a5dd8ea19e71741595.mp3",
+      "seed": 20261025,
+      "seconds": 1.4628571428571429,
+      "peak": 0.5828240513801575,
+      "sampleRate": 44100
+    },
+    "שונית המחסום הגדולה היא מערכת גדולה של שוניות אלמוגים ליד צפון מזרח אוסטרליה. חיים בה בעלי חיים ימיים רבים.": {
+      "input": "שונית המחסום הגדולה היא מערכת גדולה של שוניות אלמוגים ליד צפון מזרח אוסטרליה. חיים בה בעלי חיים ימיים רבים.",
+      "ipa": "ʃonˈit hamaχsˈom haɡdolˈa hˈi maʔaʁˈeχet ɡdolˈa ʃˈel ʃonijˈot ʔalmoɡˈim lejˈad tsfˈon mizʁˈaχ ʔostʁˈalja. χajˈim bˈa baʔalˈej χajˈim jamijˈim ʁabˈim.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-59408569f356b98b03a3.mp3",
+      "seed": 20261025,
+      "seconds": 9.125442176870749,
+      "peak": 0.9418098330497742,
+      "sampleRate": 44100
+    },
+    "איפה שונית המחסום הגדולה?": {
+      "input": "איפה שונית המחסום הגדולה?",
+      "ipa": "ʔˈejfo ʃonˈit hamaχsˈom haɡdolˈa?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-5a259e778017b067a052.mp3",
+      "seed": 20261025,
+      "seconds": 1.811156462585034,
+      "peak": 0.7555462121963501,
+      "sampleRate": 44100
+    },
+    "הגרנד קניון": {
+      "input": "הגרנד קניון",
+      "ipa": "haɡʁˈand kenjˈon",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-6a16650e38583da3da9b.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.9197112321853638,
+      "sampleRate": 44100
+    },
+    "הגרנד קניון הוא קניון עמוק באריזונה שבארצות הברית. נהר הקולורדו זורם בו.": {
+      "input": "הגרנד קניון הוא קניון עמוק באריזונה שבארצות הברית. נהר הקולורדו זורם בו.",
+      "ipa": "haɡʁˈand kenjˈon hˈu kenjˈon ʔamˈok beʔaʁizˈona ʃebeʔaʁtsˈot habʁˈit. nahˈaʁ hakolˈoʁdo zoʁˈem bˈo.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-eb01f6d65658301049db.mp3",
+      "seed": 20261025,
+      "seconds": 5.990748299319728,
+      "peak": 0.9177587628364563,
+      "sampleRate": 44100
+    },
+    "איפה הגרנד קניון?": {
+      "input": "איפה הגרנד קניון?",
+      "ipa": "ʔˈejfo haɡʁˈand kenjˈon?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-69c87892a0511d5846b9.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.8286292552947998,
+      "sampleRate": 44100
+    },
+    "מפלי ויקטוריה הם מפלים על נהר הזמבזי, בין זמביה לזימבבואה.": {
+      "input": "מפלי ויקטוריה הם מפלים על נהר הזמבזי, בין זמביה לזימבבואה.",
+      "ipa": "maplˈej viktˈoʁja hˈem maflˈim ʔˈal nahˈaʁ hazambˈazi, bˈen zˈambja lezimbˈabu.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-7c47c566dc3213ce1600.mp3",
+      "seed": 20261025,
+      "seconds": 5.015510204081632,
+      "peak": 0.917199432849884,
+      "sampleRate": 44100
+    },
+    "איפה מפלי ויקטוריה?": {
+      "input": "איפה מפלי ויקטוריה?",
+      "ipa": "ʔˈejfo maplˈej viktˈoʁja?",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-08fc5ad6868f9044c8cf.mp3",
+      "seed": 20261025,
+      "seconds": 1.3235374149659864,
+      "peak": 0.6676352024078369,
+      "sampleRate": 44100
+    },
+    "כל הטבע": {
+      "input": "כל הטבע",
+      "ipa": "kˈol hatˈeva",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-c2e5173a28715c04e3dd.mp3",
+      "seed": 20261025,
+      "seconds": 0.8359183673469388,
+      "peak": 0.5747703313827515,
+      "sampleRate": 44100
+    },
+    "אוקיינוסים": {
+      "input": "אוקיינוסים",
+      "ipa": "ʔokjˈanosim",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-4050a870bc0256713363.mp3",
+      "seed": 20261025,
+      "seconds": 0.7662585034013606,
+      "peak": 0.7669492363929749,
+      "sampleRate": 44100
+    },
+    "אזורי הקטבים": {
+      "input": "אזורי הקטבים",
+      "ipa": "ʔezoʁˈej hakatavˈim",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-f1bcf6ad83c04a03ba71.mp3",
+      "seed": 20261025,
+      "seconds": 1.253877551020408,
+      "peak": 0.6461158990859985,
+      "sampleRate": 44100
+    },
+    "ימים ואגמים": {
+      "input": "ימים ואגמים",
+      "ipa": "jamˈim veʔaɡamˈim",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-2e1d876787e102d3c905.mp3",
+      "seed": 20261025,
+      "seconds": 1.18421768707483,
+      "peak": 0.6571585536003113,
+      "sampleRate": 44100
+    },
+    "הרים": {
+      "input": "הרים",
+      "ipa": "haʁˈim",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-7f857fc05fa14b7ac39c.mp3",
+      "seed": 20261025,
+      "seconds": 0.5572789115646258,
+      "peak": 0.49746161699295044,
+      "sampleRate": 44100
+    },
+    "מדבריות": {
+      "input": "מדבריות",
+      "ipa": "midbaʁijˈot",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-f44fb9fa5a7da892e88b.mp3",
+      "seed": 20261025,
+      "seconds": 0.7662585034013606,
+      "peak": 0.7716419696807861,
+      "sampleRate": 44100
+    },
+    "נהרות": {
+      "input": "נהרות",
+      "ipa": "nehaʁˈot",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-867afcfc95f62871c5e2.mp3",
+      "seed": 20261025,
+      "seconds": 0.6965986394557823,
+      "peak": 0.5643927454948425,
+      "sampleRate": 44100
+    },
+    "יערות": {
+      "input": "יערות",
+      "ipa": "jeʔaʁˈot",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-5e20b15051c88367fd87.mp3",
+      "seed": 20261025,
+      "seconds": 0.6965986394557823,
+      "peak": 0.6781342029571533,
+      "sampleRate": 44100
+    },
+    "פלאי טבע": {
+      "input": "פלאי טבע",
+      "ipa": "pilʔˈej tˈeva",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-99ca1b263d0ac8e45880.mp3",
+      "seed": 20261025,
+      "seconds": 0.8359183673469388,
+      "peak": 0.7632075548171997,
+      "sampleRate": 44100
+    },
+    "שומעים שם ומוצאים אוקיינוסים, הרים ועוד": {
+      "input": "שומעים שם ומוצאים אוקיינוסים, הרים ועוד",
+      "ipa": "ʃomʔˈim ʃˈam vemotsʔˈim ʔokjˈanosim, haʁˈim veʔˈod",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-024499e157578d9f4df8.mp3",
+      "seed": 20261025,
+      "seconds": 3.274013605442177,
+      "peak": 0.9491485357284546,
+      "sampleRate": 44100
+    },
+    "בואו נגלה אוקיינוסים, הרים ומדבריות.": {
+      "input": "בואו נגלה אוקיינוסים, הרים ומדבריות.",
+      "ipa": "bˈoʔu neɡalˈe ʔokjˈanosim, haʁˈim vemidbaʁijˈot.",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-cd7190498b0ee2b2dc05.mp3",
+      "seed": 20261025,
+      "seconds": 2.786394557823129,
+      "peak": 0.9577584266662598,
+      "sampleRate": 44100
+    },
+    "המקום זוהר על הגלובוס": {
+      "input": "המקום זוהר על הגלובוס",
+      "ipa": "hamakˈom zohˈeʁ ʔˈal haɡlˈobus",
+      "method": "RenikudPlus-int8-niqqud",
+      "path": "audio/he/blue-53621c2e76f6114a0fcc.mp3",
+      "seed": 20261025,
+      "seconds": 1.9504761904761905,
+      "peak": 0.5790026187896729,
+      "sampleRate": 44100
     }
   },
   "previousPaths": [

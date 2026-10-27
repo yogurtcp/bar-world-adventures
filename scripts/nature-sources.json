@@ -1,0 +1,22 @@
+{
+  "source": "Natural Earth 110m physical vectors",
+  "license": "Public domain",
+  "retrieved": "2026-10-27",
+  "files": [
+    {
+      "layer": "geography_marine_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_110m_geography_marine_polys.geojson",
+      "sha256": "bcc63220041c38f547e404f047920560c92591d3ce482004f41b169ca3f6ce7b"
+    },
+    {
+      "layer": "geography_regions_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_110m_geography_regions_polys.geojson",
+      "sha256": "c50de2ee4a26e14b6400aef780eabb1dad8ee0a810576356a70135f9807db52f"
+    },
+    {
+      "layer": "rivers_lake_centerlines",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_110m_rivers_lake_centerlines.geojson",
+      "sha256": "cf70c270e30c8aad4911515136b03429d1fac3cda75c5f6bcc68f3f82ebc65da"
+    }
+  ]
+}

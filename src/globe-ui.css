@@ -133,3 +133,10 @@ dialog:not([open]){display:none}
 .nature-story .primary-button{min-height:56px;max-width:100%}
 @media(max-width:700px){.map-switches{top:calc(72px + env(safe-area-inset-top,0px));gap:4px}.layer-tabs button{font-size:14px;padding:8px 18px;min-height:44px}.nature-tabs button{font-size:12px;padding:8px 12px}.nature-home .world-stage{transform:translateY(24px);width:min(105vw,calc(100dvh - 240px));height:min(105vw,calc(100dvh - 240px))}.nature-home .world-zoom{top:55%}.nature-body{grid-template-columns:1fr;gap:12px;align-content:center}.nature-scene{width:min(100%,34dvh,330px)}.nature-story{padding:18px}.nature-story p{font-size:20px;line-height:1.55;margin:8px 0 16px}.nature-panel .popup-close{width:55px;height:55px;min-width:55px;min-height:55px;font-size:36px}.nature-stamp-icon{font-size:42px;height:80px}}
 @media(max-height:600px) and (min-width:701px){.map-switches{top:63px;width:min(640px,75vw);gap:2px}.map-switches .layer-tabs button{min-height:40px;padding:6px 20px}.nature-tabs button{min-height:38px;padding:6px 12px}.nature-home .world-stage{transform:translateY(28px);width:calc(100dvh - 155px);height:calc(100dvh - 155px)}.nature-body{gap:18px}.nature-story{padding:18px}.nature-story p{font-size:20px;margin:10px 0 16px}.nature-panel .popup-close{min-height:50px;height:50px;width:50px;min-width:50px;font-size:34px}.games-dialog .game-cards{grid-template-columns:repeat(3,1fr)}.games-dialog .game-card{min-height:120px}.games-dialog .game-illustration{height:45px;margin-bottom:8px}}
+
+/* Rotation avoids expensive hover filters; invisible small-country targets stay usable. */
+.globe.dragging .land,.globe.dragging .country-hit,.globe.dragging .globe-pin{pointer-events:none;filter:none}
+.country-hit{cursor:pointer;outline:none}
+.country-hit:focus-visible circle{fill:#ffe09a88;stroke:#946621;stroke-width:2}
+.land:focus-visible{stroke:#946621;stroke-width:3;outline:none}
+.globe-pin:focus-visible rect{stroke:#946621;stroke-width:2;rx:6}

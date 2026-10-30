@@ -40,3 +40,17 @@ test('A nature marker opens on click after pointerup, with no tap-through onto t
  for(const type of ['pointerdown','pointerup']){const e=new ui.window.Event(type,{bubbles:true,cancelable:true});Object.assign(e,{clientX:300,clientY:300,pointerId:1,button:0});svg.dispatchEvent(e);assert.ok(!ui.dialog.open);}
  svg.dispatchEvent(new ui.window.Event('click',{bubbles:true,cancelable:true}));assert.equal(ui.dialog.dataset.kind,'nature');assert.equal(ui.context.speech.length,2);assert.equal(ui.state().natureVisited.length,1);
 });
+test('Exploration has no picture bubbles or grid lines; countries remain tappable and keyboard accessible',()=>{
+ const ui=launch();assert.equal(ui.document.querySelectorAll('.globe image,.globe clipPath').length,0);assert.equal(ui.document.querySelectorAll('.globe .globe-pin').length,0);assert.equal(ui.document.querySelectorAll('.globe circle:not([fill="transparent"])').length,0);
+ const france=ui.document.querySelector('path[data-country="250"]');assert.equal(france.getAttribute('role'),'button');assert.equal(france.getAttribute('tabindex'),'0');const key=new ui.window.Event('keydown',{bubbles:true,cancelable:true});key.key='Enter';france.dispatchEvent(key);assert.equal(ui.dialog.dataset.kind,'country');assert.equal(ui.state().selected,250);assert.ok(ui.context.speech.some(([lang,text])=>lang==='he'&&text==='צרפת'));
+ ui.click('[data-action="close"]');ui.click('[data-layer="nature"]');assert.ok(ui.document.querySelectorAll('.globe-pin text').length>0);assert.equal(ui.document.querySelectorAll('.globe circle').length,0);
+});
+test('Drag updates coalesce per animation frame, release cannot answer, and a pending frame is cancelled on navigation',()=>{
+ const ui=launch();let next=0;const frames=new Map();ui.context.requestAnimationFrame=fn=>{const id=++next;frames.set(id,fn);return id;};ui.context.cancelAnimationFrame=id=>frames.delete(id);
+ const svg=ui.document.querySelector('.globe');let writes=0;const nativeSet=svg.firstChild.nextSibling.setAttribute;for(const path of svg.querySelectorAll('path')){path.setAttribute=function(...args){if(args[0]==='d')writes++;return nativeSet.apply(this,args);};}
+ const pointer=(type,x,y)=>{const event=new ui.window.Event(type,{bubbles:true,cancelable:true});Object.assign(event,{clientX:x,clientY:y,pointerId:1,button:0});svg.dispatchEvent(event);};
+ pointer('pointerdown',300,300);for(let i=1;i<=20;i++)pointer('pointermove',300+i*4,300+i);assert.equal(frames.size,1);assert.equal(writes,0);const [id,draw]=[...frames][0];frames.delete(id);draw();assert.ok(writes>0);assert.equal(frames.size,0);assert.equal(svg.classList.contains('dragging'),true);
+ const ocean=svg.querySelector('path');const oceanShape=ocean.getAttribute('d');pointer('pointermove',420,340);assert.equal(frames.size,1);const [nextId,nextDraw]=[...frames][0];frames.delete(nextId);nextDraw();assert.equal(ocean.getAttribute('d'),oceanShape);
+ pointer('pointerup',420,340);svg.dispatchEvent(new ui.window.Event('click',{bubbles:true,cancelable:true}));assert.ok(!ui.dialog.open);assert.ok(!svg.classList.contains('dragging'));
+ pointer('pointerdown',300,300);pointer('pointermove',350,300);assert.equal(frames.size,1);ui.click('[data-layer="nature"]');assert.equal(frames.size,0);assert.equal(ui.state().mapLayer,'nature');assert.equal(ui.state().stars,0);
+});
